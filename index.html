@@ -3,182 +3,346 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>RNXhub VPN</title>
+    <title>RNXBin</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            background: #0b0f1c;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 2rem 1rem;
-            color: #eef2ff;
+        * { margin: 0; padding: 0; box-sizing: border-box; transition: background 0.2s, color 0.2s; }
+        body.light { background: #f5f7fb; color: #1e293b; }
+        body.light .card { background: #ffffff; border: 1px solid #e2e8f0; }
+        body.light .btn-primary, body.light .btn-outline { background: #ffffff; border: 1px solid #cbd5e1; color: #1e293b; }
+        body.light .btn-primary:hover, body.light .btn-outline:hover { background: #f1f5f9; }
+        body.light .btn-danger { background: #dc2626; color: white; border: none; }
+        body.light .paste-item { background: #ffffff; border-left: 4px solid #4f46e5; }
+        body.light .preview { background: #f8fafc; border: 1px solid #e2e8f0; }
+        
+        body.dark { background: #0b0f1c; color: #eef2ff; }
+        body.dark .card { background: #101520; border: 1px solid #23283e; }
+        body.dark .btn-primary, body.dark .btn-outline { background: linear-gradient(95deg, #4f46e5, #7c3aed); color: white; border: none; }
+        body.dark .btn-outline { background: transparent; border: 1px solid #2d3450; color: #cbd5e6; }
+        body.dark .paste-item { background: #0e1322; border-left-color: #6c47ff; }
+        body.dark .preview { background: #080c14; border: 1px solid #23283e; }
+        body.dark .btn-danger { background: #dc2626; }
+        
+        body { font-family: 'Inter', sans-serif; padding: 2rem 1rem; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; border-bottom: 1px solid #2d3450; padding-bottom: 1rem; }
+        .left-group { display: flex; align-items: center; gap: 1rem; }
+        .social-btn { background: none; border: none; cursor: pointer; display: flex; align-items: center; gap: 6px; padding: 0.4rem 0.7rem; border-radius: 60px; font-weight: 500; }
+        .social-icon { width: 24px; height: 24px; }
+        .logo h1 { font-size: 1.9rem; background: linear-gradient(135deg, #c084fc, #60a5fa); background-clip: text; -webkit-background-clip: text; color: transparent; }
+        .btn { padding: 0.55rem 1.3rem; border-radius: 40px; font-weight: 600; font-size: 0.85rem; cursor: pointer; font-family: inherit; }
+        .card { border-radius: 28px; padding: 1.8rem; margin-bottom: 2rem; }
+        .flex-row { display: flex; gap: 0.9rem; flex-wrap: wrap; align-items: center; }
+        .paste-list { display: flex; flex-direction: column; gap: 1rem; }
+        .paste-item { border-radius: 20px; padding: 1rem 1.4rem; cursor: pointer; }
+        .paste-title { font-weight: 700; font-size: 1.1rem; }
+        .paste-meta { font-size: 0.7rem; opacity: 0.7; margin-top: 0.3rem; }
+        .preview { font-size: 0.75rem; font-family: monospace; margin-top: 10px; padding: 0.6rem; border-radius: 14px; max-height: 100px; overflow-y: auto; }
+        .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #1e293b; color: white; padding: 0.6rem 1.6rem; border-radius: 60px; font-size: 0.85rem; z-index: 2000; opacity: 0; transition: 0.2s; pointer-events: none; }
+        input, textarea { width: 100%; border-radius: 20px; padding: 0.9rem 1rem; font-family: monospace; margin-top: 0.3rem; outline: none; }
+        .social-menu { position: absolute; top: 80px; left: 24px; width: 280px; border-radius: 28px; padding: 1rem; z-index: 300; display: none; flex-direction: column; gap: 0.7rem; backdrop-filter: blur(12px); background: #0e1322; border: 1px solid #2d3450; }
+        .social-menu.show { display: flex; }
+        .social-link { display: flex; align-items: center; gap: 1rem; padding: 0.65rem 1rem; border-radius: 60px; text-decoration: none; font-weight: 500; color: inherit; }
+        .social-link img { width: 24px; height: 24px; }
+        hr { margin: 1rem 0; border-color: #2d3450; }
+        .global-notification { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #1e1e2f; color: white; padding: 1rem 2rem; border-radius: 60px; font-weight: 600; z-index: 9999; text-align: center; display: none; }
+        .admin-fab { position: fixed; bottom: 24px; right: 24px; background: #4f46e5; width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 28px; color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+        .social-link.social-highlight {
+            border: 2px solid #4f46e5;
+            background: rgba(79, 70, 229, 0.1);
         }
-        .container { max-width: 600px; width: 100%; text-align: center; }
-        .card {
-            background: #101520;
-            border: 1px solid #23283e;
-            border-radius: 32px;
-            padding: 2.5rem 2rem;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-        }
-        .logo {
-            font-size: 3rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #c084fc, #60a5fa);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            margin-bottom: 0.5rem;
-        }
-        .subtitle { font-size: 1rem; opacity: 0.7; margin-bottom: 2rem; letter-spacing: 0.5px; }
-        .message {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-            background: #0a0e17;
-            padding: 1.2rem;
-            border-radius: 16px;
-            border-left: 4px solid #4f46e5;
-        }
-        .social-grid { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 1rem; }
-        .social-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.8rem;
-            padding: 0.9rem 1.2rem;
-            border-radius: 60px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: all 0.2s ease;
-            border: 1px solid #2d3450;
-            color: #eef2ff;
-            background: transparent;
-        }
-        .social-btn:hover { transform: scale(1.02); background: rgba(255,255,255,0.05); border-color: #4f46e5; }
-        .social-btn img { width: 28px; height: 28px; object-fit: contain; }
-        .footer { margin-top: 2rem; font-size: 0.75rem; opacity: 0.4; }
-        .badge {
-            display: inline-block;
-            background: #1e243b;
-            padding: 0.2rem 0.8rem;
-            border-radius: 60px;
-            font-size: 0.65rem;
-            font-weight: 500;
-            color: #8b92b0;
-            margin-top: 0.5rem;
+        .social-link.social-highlight:hover {
+            background: rgba(79, 70, 229, 0.25);
         }
     </style>
 </head>
 <body>
-<div class="container" id="app">
-    <div class="card">
-        <div class="logo">✧ RNXhub VPN</div>
-        <div class="subtitle">Свобода без границ</div>
-        <div class="message">🔐 Подписка защищена.<br>Для получения доступа перейдите в наши соцсети:</div>
-        <div class="social-grid">
-            <a href="https://t.me/RUNEX_X_SCRIPT" target="_blank" class="social-btn">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2326A5E4' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.66-.35-1.02.22-1.61.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.08-.04-.11-.05-.02-.1-.01-.14.02-.06.03-1.94 1.23-2.74 1.74-.1.07-.2.1-.3.1-.2 0-.59-.12-1.1-.33-.66-.28-1.17-.44-1.11-.73.03-.13.18-.27.49-.41.91-.4 2.99-1.25 4.01-1.65 1.35-.54 1.92-.64 2.27-.64.16 0 .39.04.57.24.15.17.17.38.18.55z'/%3E%3C/svg%3E" alt="Telegram"> Telegram
-            </a>
-            <a href="https://www.youtube.com/@RUNEX_X_SCRIPT" target="_blank" class="social-btn">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF0000' viewBox='0 0 24 24'%3E%3Cpath d='M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15l5-3-5-3v6z'/%3E%3C/svg%3E" alt="YouTube"> YouTube
-            </a>
-            <a href="https://discord.gg/86X8qTa5b" target="_blank" class="social-btn">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%235865F2' viewBox='0 0 24 24'%3E%3Cpath d='M20.3 5.6c-1.4-.6-2.9-1-4.5-1.3-.2.4-.4.9-.5 1.4-1.7-.3-3.4-.3-5.1 0-.2-.5-.4-1-.5-1.4-1.5.3-3.1.7-4.5 1.3-1.9 2.8-2.5 5.6-2.2 8.4 1.6 1.2 3.4 2 5.3 2.5.4-.6.8-1.2 1.1-1.9-1.2-.5-2.3-1.1-3.3-1.9.3-.2.6-.4.9-.6 1.8 1.1 3.8 1.6 5.9 1.6s4.1-.5 5.9-1.6c.3.2.6.4.9.6-1 .8-2.1 1.5-3.3 1.9.3.7.7 1.3 1.1 1.9 1.9-.5 3.7-1.3 5.3-2.5.4-2.8-.2-5.6-2.2-8.4zM8.8 13.8c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2zm6.4 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2z'/%3E%3C/svg%3E" alt="Discord"> Discord
-            </a>
-            <a href="https://max.ru/join/iezUTvN_01PsecfWf3tQFlyB7x_rTAi77u556oDD1mY" target="_blank" class="social-btn">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23F59E0B' viewBox='0 0 24 24'%3E%3Cpath d='M12 2L15 8.5L22 9.5L17 14L18.5 21L12 17.5L5.5 21L7 14L2 9.5L9 8.5L12 2Z'/%3E%3C/svg%3E" alt="Max.ru"> Max.ru
-            </a>
-        </div>
-        <div class="badge">🔒 Подписка доступна только через приложение</div>
-        <div class="footer">RNXhub VPN © 2026 — Свобода без границ</div>
-    </div>
-</div>
+<div class="container" id="appRoot"></div>
+<div id="toastMsg" class="toast"></div>
+<div id="globalNotify" class="global-notification"></div>
 
 <script>
-    // ============================================================
-    // 1. ВАШИ СЕРВЕРА (В ОТКРЫТОМ ВИДЕ)
-    // ============================================================
-    const plainServers = `#profile-title: RNXhub VPN v65
-#subscription-userinfo: total=0; expire=151404336000
-#support-url: https://t.me/RUNEX_X_SCRIPT
-#profile-web-page-url: https://t.me/RUNEXscript
-#announce: base64:8J+ZgyDRgdC/0LDRgdC40LHQviDRh9GC0L4g0LjRgdC/0LvRjNC30YPQtdGC0LUgUk5YaHViIFZQTgrwn5OiINC30LDRhdC+0LTQuNGC0LUg0LIg0LzQvtC5INGC0LPQuiBAUlVORVhfWF9TQ1JJUFQK8J+kkyDRg9C00LDRh9C4INCyINC40YHQv9C+0LvRjNC30L7QstCw0L3QuNC4INC80L7QtdCz0L4g0LLQv9C90YfQuNC60LAg8J+Yjgrwn4yNIFJOWGh1YiBWUE4gLSDRgdC60L7RgNC+0YHRgtGMINCx0LXQtyDQs9GA0LDQvdC40YY=
-vless://a289a3d3-5833-4b28-8809-ae72898a98d0@ru05.abvpn.ru:443?security=tls&type=ws&fp=firefox&sni=ru05.abvpn.ru&path=/websocket#🇷🇺 Россия RNXvpn
-vless://b353ff2f-2b53-4c7e-98e1-d6e0e4a9db27@test.iron-coral.test-cdn-kkk.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=tradingview.com&fp=qq&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp#🇷🇺 Россия RNXvpn
-vless://a289a3d3-5833-4b28-8809-ae72898a98d0@31.171.131.221:443?security=reality&type=xhttp&path=%2F9ee3fa98-935e-4313-90f0-1ac3979bd5bf&host=video.tcpnet.fun&sni=video.tcpnet.fun&fp=random&pbk=bb620IN6x2p9sQo8JIw4iBrP6HeSlgsugYle5Guq0TA&sid=4e591821#🇳🇱 Нидерланды RNXvpn
-vless://b353ff2f-2b53-4c7e-98e1-d6e0e4a9db27@test.red-blaze.test-cdn-kkk.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=tradingview.com&fp=qq&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp#🇳🇱 Нидерланды RNXvpn
-vless://a289a3d3-5833-4b28-8809-ae72898a98d0@de56.tcpnet.fun:443?security=reality&type=grpc&fp=firefox&sni=de56.tcpnet.fun&pbk=g-mZmCte1poQgPCsojik6_NDBgzktXbLnXdEanbKqkc&serviceName=grpc&sid=e46e7f3f#🇩🇪 Германия RNXvpn
-vless://a289a3d3-5833-4b28-8809-ae72898a98d0@de58.abvpn.net:443?security=tls&type=xhttp&fp=firefox&sni=de58.abvpn.net&host=de58.abvpn.net&path=%2Fcc118a5c-3229-4c8f-b388-210f4a008a28%2F&alpn=h2#🇩🇪 Германия RNXvpn
-vless://b353ff2f-2b53-4c7e-98e1-d6e0e4a9db27@test.grey-lance.test-cdn-kkk.com:9443?encryption=none&type=xhttp&mode=auto&host=&security=reality&sni=sun6-21.userapi.com&fp=qq&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50#🇩🇪 Германия RNXvpn
-vless://a289a3d3-5833-4b28-8809-ae72898a98d0@pl06.abvpn.net:443?security=tls&type=ws&fp=firefox&sni=pl06.abvpn.net&path=/websocket#🇵🇱 Польша RNXvpn
-vless://b353ff2f-2b53-4c7e-98e1-d6e0e4a9db27@test.bold-stone.test-cdn-kkk.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=tradingview.com&fp=qq&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp#🇵🇱 Польша RNXvpn
-vless://f9501cb6-4632-4e8e-b0c2-2065257400a3@fin.loneliumvpn.click:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=fin.loneliumvpn.click&fp=chrome&pbk=Wi6qUhQ8b_Slw12kSszj_kUbGGGoDoemUaw40nyBxRg&type=tcp#🇫🇮 Финляндия RNXvpn
-vless://bd60cdc7-39aa-4f90-8964-e71636342423@65.109.216.33:7443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=chat.deepseek.com&fp=chrome&pbk=5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI&sid=be0ce047&type=tcp#🇫🇮 Финляндия RNXvpn
-vless://3491b63b-7d1e-4315-8c2c-be35cb33a18b@91.132.142.178:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=perplexity.ai&fp=chrome&pbk=Jv1zd4TAs6e8r3Se7TjJ-2bs1DVhi34b4BKros5D9kE&sid=c6b86d19d14fdb7f&type=tcp#🇫🇮 Финляндия RNXvpn
-vless://b353ff2f-2b53-4c7e-98e1-d6e0e4a9db27@test.iron-field.test-cdn-kkk.com:9443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=ads.x5.ru&fp=qq&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp#🇫🇮 Финляндия RNXvpn
-vless://b353ff2f-2b53-4c7e-98e1-d6e0e4a9db27@test.bear-grove.test-cdn-kkk.com:9443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=ads.x5.ru&fp=random&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp#🇫🇮 Финляндия RNXvpn
-vless://b353ff2f-2b53-4c7e-98e1-d6e0e4a9db27@test.wide-frost.test-cdn-kkk.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=tradingview.com&fp=qq&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp#🇫🇮 Финляндия RNXvpn
-vless://b353ff2f-2b53-4c7e-98e1-d6e0e4a9db27@test.rare-blade.test-cdn-kkk.com:9443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=ads.x5.ru&fp=random&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp#🇫🇮 Финляндия RNXvpn
-vless://b353ff2f-2b53-4c7e-98e1-d6e0e4a9db27@test.rare-glen.test-cdn-kkk.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=ads.x5.ru&fp=qq&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp#🇫🇮 Финляндия RNXvpn
-vless://c51759dc-e755-4414-8f2b-308e0a39d351@us.save-node.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=us.save-node.com&fp=chrome&pbk=40ppPj_fSFbWMH3egeFzEXjoYcOg6G86w_Qmaz6r-2Y&sid=a9c4f17e3b62d8&type=tcp#🇺🇸 США RNXvpn
-vless://f9501cb6-4632-4e8e-b0c2-2065257400a3@usa.loneliumvpn.click:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=usa.loneliumvpn.click&fp=chrome&pbk=MJTDsAJcJys6e2fclqryqXNyArUWQZMhF7E1akh_K3I&type=tcp#🇺🇸 США RNXvpn
-vless://bd60cdc7-39aa-4f90-8964-e71636342423@45.91.248.83:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.nytimes.com&fp=ios&pbk=E39gVJGVXKV6UXzW6TIyrz5wXZSyqzA7_5seNeQNHyg&sid=d82fb388&type=tcp#🇺🇸 США RNXvpn
-vless://3491b63b-7d1e-4315-8c2c-be35cb33a18b@45.83.140.33:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=perplexity.ai&fp=chrome&pbk=Jv1zd4TAs6e8r3Se7TjJ-2bs1DVhi34b4BKros5D9kE&sid=c6b86d19d14fdb7f&type=tcp#🇺🇸 США RNXvpn
-vless://3491b63b-7d1e-4315-8c2c-be35cb33a18b@104.167.199.32:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=perplexity.ai&fp=chrome&pbk=Jv1zd4TAs6e8r3Se7TjJ-2bs1DVhi34b4BKros5D9kE&sid=c6b86d19d14fdb7f&type=tcp#🇺🇸 США RNXvpn
-vless://b353ff2f-2b53-4c7e-98e1-d6e0e4a9db27@test.vast-mesa.test-cdn-kkk.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=tradingview.com&fp=qq&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp#🇸🇪 Швеция RNXvpn
-vless://a289a3d3-5833-4b28-8809-ae72898a98d0@fr05.abvpn.ru:443?security=tls&type=ws&fp=firefox&sni=fr05.abvpn.ru&path=/websocket#🇫🇷 Франция RNXvpn
-vless://b664ae00-a34a-403a-bcf0-ee1c1cef5dac@158.160.252.58:443?security=reality&encryption=none&pbk=r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=eh.vk.com&sid=71f0b07a98c840c7#🇫🇷 Франция RNXvpn
-vless://b353ff2f-2b53-4c7e-98e1-d6e0e4a9db27@test.gold-pond.test-cdn-kkk.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=par.eu-ffast.com&fp=qq&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp#🇫🇷 Франция RNXvpn
-vless://4038918d-dde0-4f3d-8b87-a8b552bf8ac6@88.216.223.142:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=apple.com&fp=qq&pbk=kt-wshmPVd-J1dlU-tsXUoGag2-oFwYQ5UafScaAfzQ&type=tcp#🇸🇪 Швеция RNXvpn
-vless://f9501cb6-4632-4e8e-b0c2-2065257400a3@sweden.loneliumvpn.click:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=sweden.loneliumvpn.click&fp=chrome&pbk=YTXAmNL0OovZUEJ9kDTdelChMpPQBZt72xIWc4myPko&type=tcp#🇸🇪 Швеция RNXvpn
-vless://bd60cdc7-39aa-4f90-8964-e71636342423@152.53.2.132:7443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=chat.deepseek.com&fp=chrome&pbk=5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI&sid=d82fb387&type=tcp#🇦🇹 Австрия RNXvpn
-vless://a289a3d3-5833-4b28-8809-ae72898a98d0@152.53.51.25:7443?security=reality&type=xhttp&path=%2Fd317f185-6a27-49c2-b16b-f545b13c5da6&host=www.microsoft.com&sni=www.microsoft.com&fp=firefox&pbk=JcPHfBxFVVpg1cNCW06ch6SbsFxzyT5XMet-ZU-wgHY&sid=c091ab3a#🇦🇹 Австрия RNXvpn
-vless://bd60cdc7-39aa-4f90-8964-e71636342423@107.181.134.27:7443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=chat.deepseek.com&fp=chrome&pbk=5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI&sid=be0ce047&type=tcp#🇬🇧 Великобритания RNXvpn
-vless://b353ff2f-2b53-4c7e-98e1-d6e0e4a9db27@test.firm-tower.test-cdn-kkk.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=lon.eu-ffast.com&fp=qq&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp#🇬🇧 Великобритания RNXvpn
-vless://a289a3d3-5833-4b28-8809-ae72898a98d0@157.22.240.204:7443?security=reality&type=xhttp&path=%2F114080b4-2211-4716-aa77-2700747f0f8b&host=www.microsoft.com&sni=www.microsoft.com&fp=firefox&pbk=3puuROEGQ50nxuQuBpUT50lXEIRXiSKxiqzqDbDy5is&sid=f6de2ca3#🇦🇱 Албания RNXvpn
-vless://a289a3d3-5833-4b28-8809-ae72898a98d0@alb1.abvpn.ru:443?security=tls&type=ws&fp=firefox&sni=alb1.abvpn.ru&path=/websocket#🇦🇱 Албания RNXvpn
-vless://a289a3d3-5833-4b28-8809-ae72898a98d0@188.225.45.249:443?security=reality&type=tcp&fp=firefox&sni=www.samsung.com&pbk=TuRCccpqgqNsyTuaICkwLtjidLp_eVRMDxWBC_y2xgI&sid=49dc5050#🇱🇹 Литва RNXvpn
-vless://c51759dc-e755-4414-8f2b-308e0a39d351@lt.save-node.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=lt.save-node.com&fp=chrome&pbk=oqRus6Z_Q1jqJaTEPu7ENbRL0-XKOw54K0jwCCGLtEk&sid=c31f9a0e7d4b52&type=tcp#🇱🇹 Литва RNXvpn
-vless://b353ff2f-2b53-4c7e-98e1-d6e0e4a9db27@test.raw-maple.test-cdn-kkk.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=tradingview.com&fp=qq&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp#🇪🇪 Эстония RNXvpn
-vless://a289a3d3-5833-4b28-8809-ae72898a98d0@md01.abvpn.ru:443?security=tls&type=ws&fp=firefox&sni=md01.abvpn.ru&path=/websocket#🇲🇩 Молдова RNXvpn
-vless://b353ff2f-2b53-4c7e-98e1-d6e0e4a9db27@test.soft-blade.test-cdn-kkk.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=tradingview.com&fp=qq&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp#🇰🇿 Казахстан RNXvpn
-vless://3491b63b-7d1e-4315-8c2c-be35cb33a18b@91.217.10.241:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=perplexity.ai&fp=chrome&pbk=Jv1zd4TAs6e8r3Se7TjJ-2bs1DVhi34b4BKros5D9kE&sid=c6b86d19d14fdb7f&type=tcp#🇰🇿 Казахстан RNXvpn
-vless://5bb4eea6-7786-44c9-aafa-bd0113c1b800@telegram.private-networks-zk.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=ads.x5.ru&fp=chrome&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp#⚡ Telegram RNXvpn`;
-
-    // ============================================================
-    // 2. ПРОВЕРКА USER-AGENT (для Happ и других приложений)
-    // ============================================================
-    const ua = navigator.userAgent.toLowerCase();
-
-    // Список ключевых слов, по которым определяем, что это приложение, а не браузер
-    const isApp = (
-        ua.includes('happ') ||
-        ua.includes('nekoray') ||
-        ua.includes('v2ray') ||
-        ua.includes('shadowrocket') ||
-        ua.includes('sing-box') ||
-        ua.includes('xray') ||
-        ua.includes('clash') ||
-        ua.includes('vpn') ||
-        ua.includes('curl') ||
-        ua.includes('wget') ||
-        ua.includes('http-client') ||
-        ua.includes('okhttp') ||
-        ua.includes('dart') ||
-        ua.includes('flutter') ||
-        ua.includes('android') && !ua.includes('chrome') && !ua.includes('firefox') && !ua.includes('samsung') ||
-        ua.includes('ios') && !ua.includes('safari') && !ua.includes('crios')
-    );
-
-    // Если это приложение — показываем сервера
-    if (isApp) {
-        document.body.innerHTML = `<pre style="white-space:pre-wrap; font-family:monospace; padding:1rem; color:#eef2ff; background:#0b0f1c; min-height:100vh; margin:0;">${plainServers}</pre>`;
+    // ---------- STORAGE ----------
+    let allPastes = [], users = [], currentUser = null, globalMessage = "";
+    function loadStorage() {
+        let savedPastes = localStorage.getItem('rnxbin_pastes_final3');
+        let savedUsers = localStorage.getItem('rnxbin_users_final3');
+        let savedGlobal = localStorage.getItem('rnxbin_global_message3');
+        if(savedPastes) allPastes = JSON.parse(savedPastes);
+        if(savedUsers) users = JSON.parse(savedUsers);
+        if(savedGlobal) globalMessage = savedGlobal;
+        if(!users.length) {
+            users = [{ id: "admin_u", username: "RNXbin", passwordHash: btoa("RNX999RNX"), theme: "light", isAdmin: true }];
+            localStorage.setItem('rnxbin_users_final3', JSON.stringify(users));
+            allPastes = [];
+            localStorage.setItem('rnxbin_pastes_final3', JSON.stringify(allPastes));
+            globalMessage = "";
+            localStorage.setItem('rnxbin_global_message3', "");
+        }
     }
+    function savePastes() { localStorage.setItem('rnxbin_pastes_final3', JSON.stringify(allPastes)); }
+    function saveUsers() { localStorage.setItem('rnxbin_users_final3', JSON.stringify(users)); }
+    function saveGlobalMessage() { localStorage.setItem('rnxbin_global_message3', globalMessage); }
+    function showToast(msg) { let t = document.getElementById('toastMsg'); t.textContent = msg; t.style.opacity = '1'; setTimeout(() => t.style.opacity = '0', 2000); }
+    function escapeHtml(s) { if(!s) return ''; return s.replace(/[&<>]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;'})[m]); }
+
+    // ---------- РОУТИНГ (хеш-роутинг, без 404) ----------
+    function navigate(path) { window.location.hash = path; renderRoute(); }
+    function getPath() { let hash = window.location.hash.replace('#', ''); return hash || '/'; }
+
+    function renderRoute() {
+        let path = getPath();
+        if(path === '/' || path === '/home') { renderMainPage(); return; }
+        if(path === '/create') { showCreatePage(); return; }
+        if(path.startsWith('/register')) { renderLoginRegisterPage(); return; }
+        if(path.startsWith('/profile/')) { renderProfilePageByUsername(); return; }
+        if(path.startsWith('/raw/')) { renderRawPage(); return; }
+        let parts = path.split('/').filter(p => p);
+        if(parts.length === 2) { renderPublicPastePage(decodeURIComponent(parts[0]), decodeURIComponent(parts[1])); return; }
+        renderMainPage();
+    }
+
+    // ---------- ГЛАВНАЯ СТРАНИЦА (С ИЗМЕНЁННОЙ КНОПКОЙ СОЦСЕТЕЙ) ----------
+    function renderMainPage() {
+        let isAdmin = currentUser && currentUser.username === "RNXbin";
+        let html = `
+            <div class="header">
+                <div class="left-group">
+                    <button class="social-btn" id="socialMenuBtn">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%238b8b8b'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z'/%3E%3C/svg%3E" class="social-icon">
+                        <span>Соцсети</span>
+                    </button>
+                    <div class="logo"><h1>✧ RNXBin ✧</h1><p>ЧПУ /raw/ /profile/</p></div>
+                </div>
+                <div class="flex-row">
+                    <button class="btn btn-primary" id="profileBtn">👤 Профиль</button>
+                    <button class="btn btn-primary" id="createBtn">➕ Добавить</button>
+                    <button class="btn btn-primary" id="themeToggleBtn">🌙 Тёмная тема</button>
+                </div>
+            </div>
+            <div id="pasteListContainer" class="paste-list">⏳ загрузка...</div>
+            <div id="socialMenu" class="social-menu">
+                <a href="https://t.me/RUNEX_X_SCRIPT" target="_blank" class="social-link">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2326A5E4' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.66-.35-1.02.22-1.61.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.08-.04-.11-.05-.02-.1-.01-.14.02-.06.03-1.94 1.23-2.74 1.74-.1.07-.2.1-.3.1-.2 0-.59-.12-1.1-.33-.66-.28-1.17-.44-1.11-.73.03-.13.18-.27.49-.41.91-.4 2.99-1.25 4.01-1.65 1.35-.54 1.92-.64 2.27-.64.16 0 .39.04.57.24.15.17.17.38.18.55z'/%3E%3C/svg%3E"> Telegram
+                </a>
+                <a href="https://www.youtube.com/@RUNEX_X_SCRIPT" target="_blank" class="social-link">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF0000' viewBox='0 0 24 24'%3E%3Cpath d='M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15l5-3-5-3v6z'/%3E%3C/svg%3E"> YouTube
+                </a>
+                <a href="https://discord.gg/86X8qTa5b" target="_blank" class="social-link">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%235865F2' viewBox='0 0 24 24'%3E%3Cpath d='M20.3 5.6c-1.4-.6-2.9-1-4.5-1.3-.2.4-.4.9-.5 1.4-1.7-.3-3.4-.3-5.1 0-.2-.5-.4-1-.5-1.4-1.5.3-3.1.7-4.5 1.3-1.9 2.8-2.5 5.6-2.2 8.4 1.6 1.2 3.4 2 5.3 2.5.4-.6.8-1.2 1.1-1.9-1.2-.5-2.3-1.1-3.3-1.9.3-.2.6-.4.9-.6 1.8 1.1 3.8 1.6 5.9 1.6s4.1-.5 5.9-1.6c.3.2.6.4.9.6-1 .8-2.1 1.5-3.3 1.9.3.7.7 1.3 1.1 1.9 1.9-.5 3.7-1.3 5.3-2.5.4-2.8-.2-5.6-2.2-8.4zM8.8 13.8c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2zm6.4 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2z'/%3E%3C/svg%3E"> Discord
+                </a>
+                <!-- ✅ ИЗМЕНЕНО: кнопка "Соцсети" вместо Max.ru -->
+                <a href="https://runex-rnx.github.io/social" target="_blank" class="social-link social-highlight">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23eef2ff'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z'/%3E%3C/svg%3E" style="width:28px; height:28px;">
+                    Соцсети
+                </a>
+            </div>
+        `;
+        document.getElementById('appRoot').innerHTML = html;
+        renderPasteList();
+        attachMainEvents();
+        manageAdminFab(isAdmin);
+        showGlobalMessage();
+    }
+
+    // ---------- ВСЕ ОСТАЛЬНЫЕ ФУНКЦИИ (БЕЗ ИЗМЕНЕНИЙ) ----------
+    function renderPasteList() {
+        let container = document.getElementById('pasteListContainer');
+        if(!container) return;
+        if(!allPastes.length) { container.innerHTML = `<div style="text-align:center; padding:2rem;">📭 Нет публикаций</div>`; return; }
+        let sorted = [...allPastes].sort((a,b)=> (b.createdAt||0) - (a.createdAt||0));
+        container.innerHTML = sorted.map(p => {
+            let author = users.find(u => u.id === p.authorId);
+            let authorName = author ? author.username : 'anon';
+            let date = p.createdAt ? new Date(p.createdAt).toLocaleString() : 'недавно';
+            let preview = (p.content || '').slice(0,120)+(p.content?.length>120?'…':'');
+            return `<div class="paste-item" data-url="/${encodeURIComponent(authorName)}/${encodeURIComponent(p.title)}"><div class="paste-title">📄 ${escapeHtml(p.title)}</div><div class="paste-meta">✍️ ${escapeHtml(authorName)} · ${date}</div><div class="preview">${escapeHtml(preview)}</div></div>`;
+        }).join('');
+        document.querySelectorAll('.paste-item').forEach(el => { el.addEventListener('click', () => { navigate(el.getAttribute('data-url')); }); });
+    }
+
+    function renderPublicPastePage(username, pasteTitle) {
+        let user = users.find(u => u.username === username);
+        if(!user) { document.getElementById('appRoot').innerHTML = `<div class="container"><div class="card"><h2>❌ Пользователь не найден</h2><button class="btn btn-primary" onclick="navigate('/')">На главную</button></div></div>`; return; }
+        let paste = allPastes.find(p => p.authorId === user.id && p.title === pasteTitle);
+        if(!paste) { document.getElementById('appRoot').innerHTML = `<div class="container"><div class="card"><h2>❌ Публикация не найдена</h2><button class="btn btn-primary" onclick="navigate('/')">На главную</button></div></div>`; return; }
+        let isOwner = currentUser && currentUser.id === user.id;
+        document.getElementById('appRoot').innerHTML = `<div class="container"><div class="card"><h2>📄 ${escapeHtml(paste.title)}</h2><div style="opacity:0.6;">${new Date(paste.createdAt).toLocaleString()}</div><pre style="background:rgba(0,0,0,0.05); padding:1rem; border-radius:20px; white-space:pre-wrap;">${escapeHtml(paste.content)}</pre><div class="flex-row" style="margin-top:1.5rem;"><button class="btn btn-primary" id="rawBtn">📄 RAW</button><button class="btn btn-primary" id="downloadBtn">⬇️ DOWNLOAD</button>${isOwner ? `<button class="btn btn-primary" id="editBtn">✏️ EDIT</button><button class="btn btn-danger" id="deleteBtn">🗑️ УДАЛИТЬ</button>` : ''}<button class="btn btn-primary" onclick="navigate('/')">← На главную</button></div></div></div>`;
+        document.getElementById('rawBtn')?.addEventListener('click', () => navigate(`/raw/${encodeURIComponent(username)}/${encodeURIComponent(paste.title)}`));
+        document.getElementById('downloadBtn')?.addEventListener('click', () => { let a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([paste.content], {type: 'text/plain'})); a.download = `${paste.title}.txt`; a.click(); });
+        if(isOwner && document.getElementById('editBtn')) document.getElementById('editBtn').onclick = () => showEditPage(paste.id);
+        if(isOwner && document.getElementById('deleteBtn')) document.getElementById('deleteBtn').onclick = () => { if(confirm('Удалить?')) { let idx = allPastes.findIndex(p => p.id === paste.id); if(idx!==-1) allPastes.splice(idx,1); savePastes(); navigate('/'); } };
+        manageAdminFab(currentUser?.username === "RNXbin");
+        showGlobalMessage();
+    }
+
+    function renderRawPage() {
+        let parts = window.location.pathname.split('/').filter(p => p);
+        if(parts.length < 3) { document.getElementById('appRoot').innerHTML = `<div class="container">Некорректный RAW</div>`; return; }
+        let username = decodeURIComponent(parts[1]), pasteTitle = decodeURIComponent(parts[2]);
+        let user = users.find(u => u.username === username);
+        if(!user) { document.getElementById('appRoot').innerHTML = `<div class="container">Пользователь не найден</div>`; return; }
+        let paste = allPastes.find(p => p.authorId === user.id && p.title === pasteTitle);
+        if(!paste) { document.getElementById('appRoot').innerHTML = `<div class="container">Паста не найдена</div>`; return; }
+        document.getElementById('appRoot').innerHTML = `<pre style="white-space:pre-wrap; padding:1rem;">${escapeHtml(paste.content)}</pre>`;
+        manageAdminFab(currentUser?.username === "RNXbin");
+        showGlobalMessage();
+    }
+
+    function showEditPage(pasteId) {
+        let paste = allPastes.find(p => p.id === pasteId);
+        if(!paste || !currentUser || paste.authorId !== currentUser.id) { alert("Нет прав"); navigate('/'); return; }
+        document.getElementById('appRoot').innerHTML = `<div class="container"><div class="card"><h2>✏️ Редактирование</h2><label>Название</label><input type="text" id="editTitle" value="${escapeHtml(paste.title)}" class="input-field"><label style="margin-top:1rem;">Содержимое</label><textarea id="editContent" rows="12">${escapeHtml(paste.content)}</textarea><div class="flex-row" style="margin-top:1rem;"><button class="btn btn-primary" id="saveEdit">Сохранить</button><button class="btn btn-primary" onclick="navigate('/')">Отмена</button></div></div></div>`;
+        document.getElementById('saveEdit').onclick = () => { let newTitle = document.getElementById('editTitle').value.trim(); let newContent = document.getElementById('editContent').value; if(!newContent) { alert("Пусто"); return; } paste.title = newTitle || "без названия"; paste.content = newContent; savePastes(); navigate(`/${encodeURIComponent(currentUser.username)}/${encodeURIComponent(paste.title)}`); };
+        manageAdminFab(currentUser?.username === "RNXbin");
+        showGlobalMessage();
+    }
+
+    function renderLoginRegisterPage() {
+        document.getElementById('appRoot').innerHTML = `
+            <div class="container" style="max-width:500px;">
+                <div class="card">
+                    <h2>🔐 Вход / Регистрация</h2>
+                    <div style="margin:1rem 0;">
+                        <input type="text" id="loginUser" placeholder="Логин" class="input-field">
+                        <input type="password" id="loginPass" placeholder="Пароль" class="input-field" style="margin-top:0.5rem;">
+                        <button class="btn btn-primary" id="doLogin" style="margin-top:1rem; width:100%;">Войти</button>
+                    </div>
+                    <hr>
+                    <div>
+                        <input type="text" id="regUser" placeholder="Новый логин" class="input-field">
+                        <input type="password" id="regPass" placeholder="Пароль" class="input-field" style="margin-top:0.5rem;">
+                        <button class="btn btn-primary" id="doRegister" style="margin-top:1rem; width:100%;">📝 Зарегистрироваться</button>
+                    </div>
+                    <p style="margin-top:1rem; text-align:center;">
+                        <button class="btn btn-outline" onclick="navigate('/')">← На главную</button>
+                    </p>
+                </div>
+            </div>
+        `;
+        document.getElementById('doLogin').onclick = () => {
+            let u = document.getElementById('loginUser').value.trim();
+            let p = document.getElementById('loginPass').value.trim();
+            if(!u || !p) { showToast("Введите логин и пароль"); return; }
+            let user = users.find(uu => uu.username === u && uu.passwordHash === btoa(p));
+            if(!user) { showToast("❌ Неверный логин или пароль"); return; }
+            currentUser = { id: user.id, username: user.username };
+            localStorage.setItem('rnxbin_session', JSON.stringify({ id: user.id, username: user.username }));
+            setThemeFromUser();
+            navigate('/');
+            showToast("✅ Добро пожаловать, " + user.username);
+        };
+        document.getElementById('doRegister').onclick = () => {
+            let u = document.getElementById('regUser').value.trim();
+            let p = document.getElementById('regPass').value.trim();
+            if(!u || u.length<3) { showToast("Логин минимум 3 символа"); return; }
+            if(!p || p.length<3) { showToast("Пароль минимум 3 символа"); return; }
+            if(users.find(uu => uu.username === u)) { showToast("❌ Логин уже занят"); return; }
+            let newId = 'u_' + Date.now();
+            users.push({ id: newId, username: u, passwordHash: btoa(p), theme: 'light' });
+            saveUsers();
+            currentUser = { id: newId, username: u };
+            localStorage.setItem('rnxbin_session', JSON.stringify({ id: newId, username: u }));
+            setThemeFromUser();
+            navigate('/');
+            showToast("✅ Добро пожаловать, " + u);
+        };
+        manageAdminFab(false);
+    }
+
+    function renderProfilePageByUsername() {
+        let username = getUsernameFromPath();
+        if(!username) { navigate('/'); return; }
+        if(!currentUser) { navigate('/register'); return; }
+        let user = users.find(u => u.username === username);
+        if(!user) { showToast("Пользователь не найден"); navigate('/'); return; }
+        let isOwn = currentUser.id === user.id;
+        let userPastes = allPastes.filter(p => p.authorId === user.id);
+        let pasteListHtml = userPastes.map(p => 
+            `<div class="paste-item" data-url="/${encodeURIComponent(user.username)}/${encodeURIComponent(p.title)}">
+                <div class="paste-title">📄 ${escapeHtml(p.title)}</div>
+                <div class="paste-meta">${new Date(p.createdAt).toLocaleString()}</div>
+            </div>`
+        ).join('');
+        if(!pasteListHtml) pasteListHtml = '<div style="padding:1rem;">Нет публикаций</div>';
+
+        document.getElementById('appRoot').innerHTML = `
+            <div class="container">
+                <div class="card">
+                    <h2>👤 Профиль: ${escapeHtml(user.username)}</h2>
+                    ${isOwn ? `
+                        <div style="margin:1rem 0;">
+                            <label>Сменить пароль</label>
+                            <input type="password" id="newPass" class="input-field">
+                            <button class="btn btn-primary" id="changePassBtn" style="margin-top:0.5rem;">Сменить</button>
+                        </div>
+                        <hr>
+                    ` : ''}
+                    <h3>📌 Публикации</h3>
+                    <div class="paste-list">${pasteListHtml}</div>
+                    <div class="flex-row" style="margin-top:1.5rem;">
+                        <button class="btn btn-primary" id="backHomeBtn">← На главную</button>
+                        ${isOwn ? `<button class="btn btn-danger" id="logoutBtn" style="margin-left:auto;">🚪 Выйти</button>` : ''}
+                    </div>
+                </div>
+            </div>
+        `;
+
+        document.getElementById('backHomeBtn').onclick = () => navigate('/');
+        if(isOwn) {
+            document.getElementById('changePassBtn')?.addEventListener('click', () => {
+                let newP = document.getElementById('newPass').value;
+                if(!newP || newP.length<3) { showToast("Пароль минимум 3 символа"); return; }
+                currentUser.passwordHash = btoa(newP);
+                let idx = users.findIndex(u => u.id === currentUser.id);
+                if(idx !== -1) users[idx].passwordHash = btoa(newP);
+                saveUsers();
+                showToast("✅ Пароль изменён");
+            });
+            document.getElementById('logoutBtn').onclick = () => {
+                currentUser = null;
+                localStorage.removeItem('rnxbin_session');
+                navigate('/');
+                showToast("👋 Вы вышли");
+            };
+        }
+        document.querySelectorAll('.paste-item').forEach(el => {
+            el.addEventListener('click', () => { navigate(el.getAttribute('data-url')); });
+        });
+        manageAdminFab(currentUser?.username === "RNXbin");
+        showGlobalMessage();
+    }
+
+    function showCreatePage() {
+        if(!currentUser) { navigate('/register'); return; }
+        document.getElementById('appRoot').innerHTML = `<div class="container" style="max-width:950px;"><div><button class="btn btn-primary" id="backHome">← На главную</button></div><div class="card" style="margin-top:1rem;"><h2>➕ Новая публикация</h2><input type="text" id="newTitle" placeholder="Название" class="input-field"><textarea id="newContent" rows="12" placeholder="vless://..."></textarea><div class="flex-row"><button class="btn btn-primary" id="doPublish">📤 Опубликовать</button><button class="btn btn-primary" id="cancelPub">Отмена</button></div></div></div>`;
+        document.getElementById('backHome').onclick = () => navigate('/');
+        document.getElementById('cancelPub').onclick = () => navigate('/');
+        document.getElementById('doPublish').onclick = () => { let title = document.getElementById('newTitle').value.trim() || "новая запись"; let content = document.getElementById('newContent').value.trim(); if(!content) { alert("Пустой текст"); return; } let newId = 'p_' + Date.now() + '_' + Math.random().toString(36); allPastes.unshift({ id: newId, title: title, content: content, authorId: currentUser.id, createdAt: Date.now() }); savePastes(); navigate(`/${encodeURIComponent(currentUser.username)}/${encodeURIComponent(title)}`); };
+        manageAdminFab(currentUser?.username === "RNXbin");
+        showGlobalMessage();
+    }
+
+    function getUsernameFromPath() { let parts = window.location.pathname.split('/').filter(p => p); if(parts[0] === 'profile' && parts[1]) return decodeURIComponent(parts[1]); return null; }
+    
+    function attachMainEvents() {
+        document.getElementById('profileBtn')?.addEventListener('click', () => { 
+            if(currentUser) navigate(`/profile/${encodeURIComponent(currentUser.username)}`); 
+            else navigate('/register'); 
+        });
+        document.getElementById('createBtn')?.addEventListener('click', () => { navigate('/create'); });
+        document.getElementById('themeToggleBtn')?.addEventListener('click', () => { let isDark = document.body.classList.contains('dark'); setTheme(isDark ? 'light' : 'dark'); });
+        let sb = document.getElementById('socialMenuBtn'), sm = document.getElementById('socialMenu');
+        if(sb && sm) { sb.addEventListener('click', (e) => { e.stopPropagation(); sm.classList.toggle('show'); }); document.addEventListener('click', (e) => { if(!sm.contains(e.target) && e.target !== sb) sm.classList.remove('show'); }); }
+    }
+    
+    function manageAdminFab(isAdmin) { let old = document.querySelector('.admin-fab'); if(old) old.remove(); if(isAdmin) { let fab = document.createElement('div'); fab.className = 'admin-fab'; fab.innerHTML = '✏️'; fab.onclick = () => { let msg = prompt("Глобальное сообщение для всех:", globalMessage); if(msg !== null) { globalMessage = msg; saveGlobalMessage(); showGlobalMessage(); showToast("Глобал обновлён"); } }; document.body.appendChild(fab); } }
+    function showGlobalMessage() { let el = document.getElementById('globalNotify'); if(globalMessage && globalMessage.trim()) { el.innerText = globalMessage; el.style.display = 'flex'; setTimeout(() => el.style.display = 'none', 5000); } else el.style.display = 'none'; }
+    function setTheme(theme) { document.body.classList.remove('light', 'dark'); document.body.classList.add(theme); if(currentUser) { let u = users.find(u => u.id === currentUser.id); if(u) u.theme = theme; saveUsers(); } localStorage.setItem('rnxbin_global_theme', theme); }
+    function setThemeFromUser() { let theme = 'light'; if(currentUser) { let u = users.find(u => u.id === currentUser.id); if(u && u.theme) theme = u.theme; } else theme = localStorage.getItem('rnxbin_global_theme') === 'dark' ? 'dark' : 'light'; document.body.classList.add(theme); }
+    function initSession() { let sess = localStorage.getItem('rnxbin_session'); if(sess) { try { let obj = JSON.parse(sess); let found = users.find(u => u.id === obj.id && u.username === obj.username); if(found) currentUser = { id: found.id, username: found.username }; } catch(e) {} } }
+    
+    window.addEventListener('popstate', () => renderRoute());
+    loadStorage(); initSession(); setThemeFromUser(); renderRoute();
 </script>
 </body>
 </html>
