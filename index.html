@@ -76,7 +76,33 @@
             background: rgba(255,255,255,0.05);
             border-color: #4f46e5;
         }
-        .btn .icon {
+        .btn .icon-img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            display: inline-block;
+        }
+        /* Специальный класс для Max — увеличенная иконка */
+        .btn .icon-img-max {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            display: inline-block;
+        }
+        .btn .icon-img-square {
+            width: 32px;
+            height: 32px;
+            border-radius: 0;
+            object-fit: contain;
+            flex-shrink: 0;
+            display: inline-block;
+            background: transparent;
+        }
+        .btn .icon-placeholder {
             font-size: 1.6rem;
             line-height: 1;
             width: 2rem;
@@ -130,49 +156,49 @@
         <div id="page-main" class="page">
             <div class="logo">✧ RNXhub VPN ✧</div>
             <div class="subtitle">Свобода без границ</div>
-            <div class="message">🔐 Подписка защищена.<br>Для получения доступа перейдите в наши соцсети:</div>
+            <div class="message">Приветствую тебя<br>Для получения впн просто перейдите поссылкам ниже</div>
             <div class="btn-group">
                 <a href="happ://add/https://runex-rnx.github.io/VPN/#/" target="_blank" class="btn btn-happ">
-                    <span class="icon">📱</span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAAB+0lEQVQ4y6WTP2gTYRjGn3u/72uudwdVSIKisZxCoESkCJIlIkLHLlEEB0HJ5OSgiNJBaDeHOoRKFxWpHVxcJHbqUnBx05ISLNLzL8I1Ioa7cPHu+86hlJrvRATf6R1+vH+e932MCv4ehP8F+F7KAEACBgFQaQYwopCBWylkD4ApdIAFF2qBs/7QiUfvAM6CN5JqFZLadCyQQLoXFWghO6RZALAOJAVI+J/NVAOU6UK0e+MqKQG0dDpiw4Ahx/Lwly91CUchmpOlSG8hx6l/73oYcu6ihakOV8MAJYcwVy96SHJu++W1eDunrzmYfFSrYosj37vfxPevTBtS2WvWdIxO8A0PZgX8iDJCbSwqhrMTzkq9GIv3kakB1K8AhCvUmq0qBj97zWQMgKJVv6oI2PzDucuAonfdhiIAX3a3/O0WRyDFq5uVtdKMAj7kMv9gHgBTj7ESnYMUq8VwoLVQZlHRzPmi7RyDaD+72mXDgCEP7qdm+YwnksPw785/zAw5KIhW0HgbcORx45a1qf8kJRPtF4sII8c8cfvycfzgegXeW55X8DBwl8pTMbycGgak87xuSWyBeW8aMfO3KdUqyNGTiuETR3gKID9gug7KfgJYGznYnad96/WeW4xdb6oQgE0wfkYAt9KMkmzfjp/SEXPHYDqQSj35R/P+AtTAt1gIznsGAAAAAElFTkSuQmCC" alt="Happ" class="icon-img">
                     Добавить в Happ
                 </a>
                 <a href="v2raytun://import/https://runex-rnx.github.io/VPN/#/" target="_blank" class="btn btn-v2ray">
-                    <span class="icon">📡</span>
+                    <img src="https://play-lh.googleusercontent.com/LZ4jXc1dvJzi0VabcAIMXBuW3X3MQUO2lDToAQL4sNZHTqWbBokgbeog-5bKjJFKZcc" alt="V2RayTun" class="icon-img">
                     Добавить в V2RayTun
                 </a>
                 <button class="btn btn-social" id="socialBtn">
-                    <span class="icon">🌐</span>
+                    <span class="icon-placeholder">🌐</span>
                     Соцсети
                 </button>
             </div>
-            <div class="badge">🔒 Подписка доступна только через приложение</div>
+            <div class="badge">🔒 Подписка доступна только в приложениях</div>
             <div class="footer">RNXhub VPN © 2026 — Свобода без границ</div>
         </div>
 
         <!-- СТРАНИЦА СОЦСЕТЕЙ -->
         <div id="page-social" class="page hidden">
             <div class="logo">✧ RNXhub VPN ✧</div>
-            <div class="subtitle">Наши соцсети</div>
+            <div class="subtitle">Мои соцсети</div>
             <div class="btn-group">
                 <a href="https://t.me/RUNEX_X_SCRIPT" target="_blank" class="btn" style="border-color: #26A5E4;">
-                    <span class="icon">✈️</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1280px-Telegram_logo.svg.png" alt="Telegram" class="icon-img">
                     Telegram
                 </a>
                 <a href="https://www.youtube.com/@RUNEX_X_SCRIPT" target="_blank" class="btn" style="border-color: #FF0000;">
-                    <span class="icon">▶️</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png" alt="YouTube" class="icon-img-square">
                     YouTube
                 </a>
                 <a href="https://discord.gg/86X8qTa5b" target="_blank" class="btn" style="border-color: #5865F2;">
-                    <span class="icon">🎮</span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAS1BMVEX///9WYO9WZPFYZfFXZPFYZPFYZPFXZfJYZfJibvJodPOjqvjb3vz+/v/EyfqDjfWSm/bv8f21u/mts/jo6v10f/S7wPl2gPTf4vxqtwz0AAAACHRSTlMAEFyOzez5JpYPyAYAAAD/SURBVDjLjVPpmoMgDETkCFBAxB7v/6S7hWCo1mXnB/KZkMzkYGzHxGchlZJi5hM7Q88KdqhZH+29ubp8PhdwguiCaAlfIPXf9s5DwAUE8oNLFKaa+BtDZ9WiuwDW3XyIyxKDvzlLISYMYJLvkDCKmhhH39V/YMXfvGWw/gDbcqDGfHTITSkWqTDYypm2csdiscrxXh+ZX9tmarh7ZYkOC6bNJXYhtKCDJAoRIHgfACKRkEiyiEyufFaXSKhAmQ9/wgNlckoRmi1QCt5K7d7KntHl7OLzrdO1Uu+lzOnVmvhK2VK/qd3mdCntHg7MeOTGQzsc+/HijFfvH8t7uf4/tI4ehrqVUtkAAAAASUVORK5CYII=" alt="Discord" class="icon-img">
                     Discord
                 </a>
                 <a href="https://max.ru/join/iezUTvN_01PsecfWf3tQFlyB7x_rTAi77u556oDD1mY" target="_blank" class="btn" style="border-color: #F59E0B;">
-                    <span class="icon">⭐</span>
+                    <img src="https://static.vecteezy.com/system/resources/previews/069/991/653/large_2x/max-app-icon-on-a-transparent-background-free-png.png" alt="Max" class="icon-img-max">
                     Max
                 </a>
                 <button class="btn" id="backBtn" style="border-color: #8b92b0; margin-top: 1rem;">← Назад</button>
             </div>
-            <div class="badge">🔒 Все ссылки проверены</div>
+            <div class="badge"></div>
             <div class="footer">RNXhub VPN © 2026 — Свобода без границ</div>
         </div>
     </div>
@@ -182,11 +208,12 @@
     // ============================================================
     // 1. ВАШИ СЕРВЕРА (В ОТКРЫТОМ ВИДЕ ДЛЯ HAPP)
     // ============================================================
-    const plainServers = `#profile-title: RNXhub VPN v65
+    const plainServers = `
+#profile-title: RNXhub VPN v67
 #subscription-userinfo: total=0; expire=151404336000
 #support-url: https://t.me/RUNEX_X_SCRIPT
 #profile-web-page-url: https://t.me/RUNEXscript
-#announce: base64:8J+ZgyDRgdC/0LDRgdC40LHQviDRh9GC0L4g0LjRgdC/0LvRjNC30YPQtdGC0LUgUk5YaHViIFZQTgrwn5OiINC30LDRhdC+0LTQuNGC0LUg0LIg0LzQvtC5INGC0LPQuiBAUlVORVhfWF9TQ1JJUFQK8J+kkyDRg9C00LDRh9C4INCyINC40YHQv9C+0LvRjNC30L7QstCw0L3QuNC4INC80L7QtdCz0L4g0LLQv9C90YfQuNC60LAg8J+Yjgrwn4yNIFJOWGh1YiBWUE4gLSDRgdC60L7RgNC+0YHRgtGMINCx0LXQtyDQs9GA0LDQvdC40YY=
+#announce: base64:8J+ZgyDRgdC/0LDRgdC40LHQviDRh9GC0L4g0LjRgdC/0LvRjNC30YPQtdGC0LUgUk5YaHViIFZQTgrwn5OiINC30LDRhdC+0LTQuNGC0LUg0LIg0LzQvtC5INGC0LMuQHJ1bmV4X3hfc2NyaXB0CvCf5JOg0YPQtNCw0YfQuCDQsiDQv9C+0LvRjNC30L7QstCw0L3QuNC4INC80L7QtdCz0L4g0LLQv9C90YfQuNC60LAg8J+Yjgrwn4yNUk5YaHViIFZQTiAtINGB0LrQvtGA0L7RgdGC0Ywg0LHQtdC3INCz0YDQsNC90LjRhg==
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@ru05.abvpn.ru:443?security=tls&type=ws&fp=firefox&sni=ru05.abvpn.ru&path=/websocket#🇷🇺 Россия RNXvpn
 vless://b353ff2f-2b53-4c7e-98e1-d6e0e4a9db27@test.iron-coral.test-cdn-kkk.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=tradingview.com&fp=qq&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp#🇷🇺 Россия RNXvpn
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@31.171.131.221:443?security=reality&type=xhttp&path=%2F9ee3fa98-935e-4313-90f0-1ac3979bd5bf&host=video.tcpnet.fun&sni=video.tcpnet.fun&fp=random&pbk=bb620IN6x2p9sQo8JIw4iBrP6HeSlgsugYle5Guq0TA&sid=4e591821#🇳🇱 Нидерланды RNXvpn
