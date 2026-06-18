@@ -84,7 +84,6 @@
             flex-shrink: 0;
             display: inline-block;
         }
-        /* Специальный класс для Max — увеличенная иконка */
         .btn .icon-img-max {
             width: 40px;
             height: 40px;
@@ -113,6 +112,8 @@
         .btn-happ:hover { border-color: #6366f1; background: rgba(99,102,241,0.2); }
         .btn-v2ray { border-color: #10b981; background: rgba(16,185,129,0.1); }
         .btn-v2ray:hover { border-color: #34d399; background: rgba(52,211,153,0.2); }
+        .btn-copy { border-color: #8b5cf6; background: rgba(139,92,246,0.1); }
+        .btn-copy:hover { border-color: #a78bfa; background: rgba(167,139,250,0.2); }
         .btn-social { border-color: #f59e0b; background: rgba(245,158,11,0.1); }
         .btn-social:hover { border-color: #fbbf24; background: rgba(251,191,36,0.2); }
         .footer {
@@ -132,6 +133,25 @@
         }
         .page { display: block; }
         .page.hidden { display: none; }
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1e243b;
+            color: #eef2ff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 60px;
+            font-size: 0.9rem;
+            border: 1px solid #4f46e5;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            z-index: 1000;
+        }
+        .toast.show {
+            opacity: 1;
+        }
         @media (max-width: 480px) {
             .card { padding: 1.8rem 1.2rem; }
             .logo { font-size: 2.2rem; }
@@ -156,7 +176,7 @@
         <div id="page-main" class="page">
             <div class="logo">✧ RNXhub VPN ✧</div>
             <div class="subtitle">Свобода без границ</div>
-            <div class="message">Приветствую тебя<br>Для получения впн просто перейдите поссылкам ниже</div>
+            <div class="message">Приветствую тебя<br>Для получения впн просто перейдите по ссылкам ниже</div>
             <div class="btn-group">
                 <a href="happ://add/https://runex-rnx.github.io/VPN/#/" target="_blank" class="btn btn-happ">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAAB+0lEQVQ4y6WTP2gTYRjGn3u/72uudwdVSIKisZxCoESkCJIlIkLHLlEEB0HJ5OSgiNJBaDeHOoRKFxWpHVxcJHbqUnBx05ISLNLzL8I1Ioa7cPHu+86hlJrvRATf6R1+vH+e932MCv4ehP8F+F7KAEACBgFQaQYwopCBWylkD4ApdIAFF2qBs/7QiUfvAM6CN5JqFZLadCyQQLoXFWghO6RZALAOJAVI+J/NVAOU6UK0e+MqKQG0dDpiw4Ahx/Lwly91CUchmpOlSG8hx6l/73oYcu6ihakOV8MAJYcwVy96SHJu++W1eDunrzmYfFSrYosj37vfxPevTBtS2WvWdIxO8A0PZgX8iDJCbSwqhrMTzkq9GIv3kakB1K8AhCvUmq0qBj97zWQMgKJVv6oI2PzDucuAonfdhiIAX3a3/O0WRyDFq5uVtdKMAj7kMv9gHgBTj7ESnYMUq8VwoLVQZlHRzPmi7RyDaD+72mXDgCEP7qdm+YwnksPw785/zAw5KIhW0HgbcORx45a1qf8kJRPtF4sII8c8cfvycfzgegXeW55X8DBwl8pTMbycGgak87xuSWyBeW8aMfO3KdUqyNGTiuETR3gKID9gug7KfgJYGznYnad96/WeW4xdb6oQgE0wfkYAt9KMkmzfjp/SEXPHYDqQSj35R/P+AtTAt1gIznsGAAAAAElFTkSuQmCC" alt="Happ" class="icon-img">
@@ -166,6 +186,10 @@
                     <img src="https://play-lh.googleusercontent.com/LZ4jXc1dvJzi0VabcAIMXBuW3X3MQUO2lDToAQL4sNZHTqWbBokgbeog-5bKjJFKZcc" alt="V2RayTun" class="icon-img">
                     Добавить в V2RayTun
                 </a>
+                <button class="btn btn-copy" id="copyBtn">
+                    <span class="icon-placeholder">📋</span>
+                    Скопировать ссылку
+                </button>
                 <button class="btn btn-social" id="socialBtn">
                     <span class="icon-placeholder">🌐</span>
                     Соцсети
@@ -203,6 +227,9 @@
         </div>
     </div>
 </div>
+
+<!-- Toast-уведомление -->
+<div class="toast" id="toast">✅ Ссылка скопирована!</div>
 
 <script>
     // ============================================================
@@ -314,6 +341,54 @@ vless://5bb4eea6-7786-44c9-aafa-bd0113c1b800@telegram.private-networks-zk.com:44
 
         if (window.location.pathname.endsWith('/social')) {
             showSocial();
+        }
+
+        // ============================================================
+        // 4. КНОПКА КОПИРОВАНИЯ
+        // ============================================================
+        const copyBtn = document.getElementById('copyBtn');
+        const toast = document.getElementById('toast');
+        let toastTimeout;
+
+        copyBtn.addEventListener('click', function() {
+            const url = 'https://runex-rnx.github.io/VPN/';
+            
+            // Современный способ копирования
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(url).then(() => {
+                    showToast('✅ Ссылка скопирована!');
+                }).catch(() => {
+                    fallbackCopy(url);
+                });
+            } else {
+                fallbackCopy(url);
+            }
+        });
+
+        function fallbackCopy(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            textarea.style.left = '-9999px';
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                showToast('✅ Ссылка скопирована!');
+            } catch (err) {
+                showToast('❌ Не удалось скопировать');
+            }
+            document.body.removeChild(textarea);
+        }
+
+        function showToast(message) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2000);
         }
     }
 </script>
