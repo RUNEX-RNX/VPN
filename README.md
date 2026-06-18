@@ -1,6 +1,6 @@
 # 🌐 RNXhub VPN
 
-![Version](https://img.shields.io/badge/version-2.0-blue)
+![Version](https://img.shields.io/badge/version-67-blue)
 ![Servers](https://img.shields.io/badge/servers-0-blue)
 ![Protocol](https://img.shields.io/badge/protocol-VLESS%20Reality-red)
 
