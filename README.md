@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/badge/version-67-blue)
 ![Servers](https://img.shields.io/badge/servers-0-blue)
-![?](?)
+-- ![]()
 
 ## 🌍 RNXhub VPN — это глобальная сеть серверов с обходом для разных стран. Больше никаких блокировок! RNXhub VPN работает для всех стран, не только для России.
 
