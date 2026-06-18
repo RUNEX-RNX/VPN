@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>RNXBin</title>
+    <style>
+        body { font-family: sans-serif; background: #0b0f1c; color: #eef2ff; padding: 2rem; max-width: 800px; margin: 0 auto; }
+        .card { background: #101520; border-radius: 16px; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid #23283e; }
+        input, textarea { width: 100%; background: #0a0e17; border: 1px solid #2a2f45; border-radius: 12px; padding: 0.7rem; color: white; font-family: monospace; }
+        .btn { background: #4f46e5; color: white; border: none; padding: 0.5rem 1.2rem; border-radius: 40px; cursor: pointer; }
+        .btn:hover { opacity: 0.8; }
+        .paste-item { background: #0e1322; padding: 0.8rem; border-radius: 12px; margin-bottom: 0.5rem; border-left: 4px solid #6c47ff; cursor: pointer; }
+        .paste-item:hover { background: #1a1f32; }
+    </style>
+</head>
+<body>
+<h1>✧ RNXBin</h1>
+<div class="card">
+    <h3>➕ Новая публикация</h3>
+    <input type="text" id="newTitle" placeholder="Название">
+    <textarea id="newContent" rows="6" placeholder="Вставьте ваш текст..."></textarea>
+    <button class="btn" id="publishBtn">📤 Опубликовать</button>
+</div>
+<div id="pasteList"></div>
+<script>
+    let allPastes = JSON.parse(localStorage.getItem('rnxbin_pastes')) || [];
+    function render() {
+        const container = document.getElementById('pasteList');
+        if (!allPastes.length) { container.innerHTML = '<div style="text-align:center; padding:2rem;">📭 Нет публикаций</div>'; return; }
+        container.innerHTML = allPastes.map(p => `
+            <div class="paste-item" onclick="alert('${p.content.replace(/'/g, "\\'")}')">
+                <b>📄 ${p.title || 'Без названия'}</b>
+                <div style="font-size:0.7rem; opacity:0.6;">${new Date(p.createdAt).toLocaleString()}</div>
+            </div>
+        `).join('');
+    }
+    document.getElementById('publishBtn').onclick = () => {
+        const title = document.getElementById('newTitle').value.trim() || 'новая запись';
+        const content = document.getElementById('newContent').value.trim();
+        if (!content) { alert('Пустой текст'); return; }
+        allPastes.unshift({ id: Date.now() + '_' + Math.random().toString(36), title, content, createdAt: Date.now() });
+        localStorage.setItem('rnxbin_pastes', JSON.stringify(allPastes));
+        document.getElementById('newTitle').value = '';
+        document.getElementById('newContent').value = '';
+        render();
+        alert('✅ Опубликовано!');
+    };
+    render();
+</script>
+</body>
+</html>
