@@ -1,4 +1,4 @@
-#profile-title: RNXhub VPN v85
+#profile-title: RNXhub VPN v86
 #profile-skip-servers: true
 #subscription-userinfo: total=0; expire=151404336000
 #support-url: https://t.me/RUNEX_X_SCRIPT
@@ -11,14 +11,9 @@ vless://a289a3d3-5833-4b28-8809-ae72898a98d0@89.221.203.151:443?security=reality
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@94.228.124.204:7443?security=reality&type=tcp&fp=firefox&sni=www.aviasales.com&pbk=5aQbjotbruol_lIeJVnLQ6BZ4jsE24WuENKWWNZk7HE&sid=f21e8225#🇩🇪 Германия RNXhub VPN
 vless://5309b7b5-167d-4dfe-b3ea-6bda4bc7caf2@176.109.94.215:8443?security=reality&type=grpc&fp=firefox&sni=vk.com&pbk=WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc&serviceName=grpc&sid=16ee3a5f0387c553#🇺🇦 Украина RNXhub VPN
 vless://5309b7b5-167d-4dfe-b3ea-6bda4bc7caf2@176.109.94.215:8443?security=reality&type=grpc&fp=firefox&sni=max.ru&pbk=WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc&serviceName=grpc&sid=16ee3a5f0387c553#🇺🇦 Украина RNXhub VPN
-vless://a289a3d3-5833-4b28-8809-ae72898a98d0@193.243.147.46:7443?security=reality&type=grpc&fp=firefox&sni=www.samsung.com&pbk=O8xvtOqtx3jdZZOX9gjlSNZJgFQTEifR2-CKEfTJ2UI&serviceName=grpc&sid=991edd31#🇫🇷 Франция RNXhub VPN
-vless://5309b7b5-167d-4dfe-b3ea-6bda4bc7caf2@194.55.239.213:8443?security=reality&type=grpc&fp=firefox&sni=vk.com&pbk=WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc&serviceName=grpc&sid=16ee3a5f0387c553#🇩🇪 Германия RNXhub VPN
-vless://5309b7b5-167d-4dfe-b3ea-6bda4bc7caf2@194.55.239.213:8443?security=reality&type=grpc&fp=firefox&sni=max.ru&pbk=WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc&serviceName=grpc&sid=16ee3a5f0387c553#🇩🇪 Германия RNXhub VPN
-vless://5309b7b5-167d-4dfe-b3ea-6bda4bc7caf2@5.188.114.226:8443?security=reality&type=grpc&fp=firefox&sni=vk.com&pbk=WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc&serviceName=grpc&sid=16ee3a5f0387c553#🇷🇺 Россия RNXhub VPN
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@alb1.abvpn.ru:443?security=tls&type=ws&fp=chrome&sni=alb1.abvpn.ru&path=/websocket#🇦🇱 Албания RNXhub VPN
-vless://a289a3d3-5833-4b28-8809-ae72898a98d0@de13.abvpn.ru:443?security=tls&type=ws&fp=chrome&sni=de13.abvpn.ru&path=/websocket#🇩🇪 Германия RNXhub VPN
-vless://a289a3d3-5833-4b28-8809-ae72898a98d0@de56.tcpnet.fun:443?security=reality&type=grpc&fp=firefox&sni=de56.tcpnet.fun&pbk=g-mZmCte1poQgPCsojik6_NDBgzktXbLnXdEanbKqkc&serviceName=grpc&sid=e46e7f3f#🇩🇪 Германия RNXhub VPN
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@de58.abvpn.net:443?security=tls&type=xhttp&fp=firefox&sni=de58.abvpn.net&host=de58.abvpn.net&path=%2Fcc118a5c-3229-4c8f-b388-210f4a008a28%2F&alpn=h2#🇩🇪 Германия RNXhub VPN
+
 vless://5309b7b5-167d-4dfe-b3ea-6bda4bc7caf2@dm1.qu0nity.online:443?security=tls&type=xhttp&fp=firefox&sni=dm1.qu0nity.online&path=/api/v2/sync&host=dm1.qu0nity.online&mode=packet-up#🇳🇱 Нидерланды RNXhub VPN
 vless://5309b7b5-167d-4dfe-b3ea-6bda4bc7caf2@dm33.urakroshka.me:443?security=tls&type=xhttp&fp=chrome&sni=dm33.urakroshka.me&path=/api/v4/sync/&host=dm33.urakroshka.me&mode=packet-up#🇳🇱 Нидерланды RNXhub VPN
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@pics.tcpdoor.net:443?security=tls&type=ws&fp=firefox&sni=pics.tcpdoor.net&path=/websocket#🇳🇱 Нидерланды RNXhub VPN
