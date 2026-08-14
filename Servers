@@ -6,8 +6,8 @@
 #announce: base64:8J+MjSBSTlhodWIgVlBOIPCfjI4K8J+ToiDQt9Cw0YXQvtC00LjRgtC1INCyINGC0LPQuiBAUlVORVhfWF9TQ1JJUFQK8J+TsSDQv9C+INCy0L7Qv9GA0L7RgdCw0Lwg0L/QuNGB0LDRgtGMIEBSVU5FWHNjcmlwdArwn5iOINGD0LTQsNGH0Lgg0LIg0LjRgdC/0L7Qu9GM0LfQvtCy0LDQvdC40Lgg
 
 -- обход глушилок
-vless://5309b7b5-167d-4dfe-b3ea-6bda4bc7caf2@176.109.94.215:8443?security=reality&type=grpc&fp=firefox&sni=vk.com&pbk=WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc&serviceName=grpc&sid=16ee3a5f0387c553#🇺🇦 Украина RNXhub VPN
-vless://5309b7b5-167d-4dfe-b3ea-6bda4bc7caf2@176.109.94.215:8443?security=reality&type=grpc&fp=firefox&sni=max.ru&pbk=WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc&serviceName=grpc&sid=16ee3a5f0387c553#🇺🇦 Украина RNXhub VPN
+-- vless://353dd008-94f3-44b5-80f3-192b74de7b40@90.156.218.236:443?encryption=none&security=reality&sni=360.yandex.ru&fp=firefox&pbk=VaKp9XjMqT7lA4F3b6hpdF6fmsiY4B_hz6MzT6fv938&type=grpc&mode=gun#🇺🇲Обход глушилок⚡
+
 -- обычные сервера
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@54.38.137.161:443?security=tls&type=ws&fp=firefox&sni=pl06.abvpn.net&path=/websocket#🇵🇱 Польша RNXhub VPN
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@81.90.31.208:443?security=reality&type=xhttp&path=%2F99ad04ff-593f-47e8-ad0e-dc29d11446d6&host=www.aviasales.com&sni=www.aviasales.com&fp=edge&pbk=PE9mzsnJ_wNPPxxPb-s2rD7qNQuyrFarLkB4aGiAc0Y&sid=047a2a40#🇪🇪 Эстония RNXhub VPN
