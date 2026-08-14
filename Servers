@@ -7,7 +7,198 @@
 
 -- обход глушилок
 -- vless://353dd008-94f3-44b5-80f3-192b74de7b40@90.156.218.236:443?encryption=none&security=reality&sni=360.yandex.ru&fp=firefox&pbk=VaKp9XjMqT7lA4F3b6hpdF6fmsiY4B_hz6MzT6fv938&type=grpc&mode=gun#🇺🇲Обход глушилок⚡
-
+{
+  "remarks": "🇱🇹 Обход глушилок [LTE] ⚡️",
+  "log": {
+    "loglevel": "none",
+    "access": "none",
+    "error": "none"
+  },
+  "policy": {
+    "levels": {
+      "0": {
+        "handshake": 4,
+        "connIdle": 600,
+        "uplinkOnly": 2,
+        "downlinkOnly": 5,
+        "bufferSize": 4
+      }
+    },
+    "system": {
+      "statsInboundUplink": false,
+      "statsInboundDownlink": false,
+      "statsOutboundUplink": false,
+      "statsOutboundDownlink": false
+    }
+  },
+  "dns": {
+    "tag": "dns_in",
+    "queryStrategy": "UseIPv4",
+    "disableCache": false,
+    "servers": [
+      {
+        "address": "https://77.88.8.8/dns-query",
+        "domains": [
+          "domain:ru",
+          "domain:su",
+          "domain:xn--p1ai",
+          "domain:moscow",
+          "domain:2gis.com",
+          "domain:moex.com",
+          "domain:kontur.host",
+          "domain:megamarket.tech",
+          "domain:tank-online.com",
+          "domain:tbank-online.com",
+          "domain:tildaapi.com",
+          "domain:yandex.net",
+          "domain:yandex.com",
+          "domain:yandexcloud.net",
+          "domain:yastatic.net",
+          "full:go.yandex"
+        ],
+        "skipFallback": true
+      },
+      "https://8.8.8.8/dns-query",
+      "localhost"
+    ]
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ],
+        "enabled": true,
+        "routeOnly": true
+      },
+      "tag": "socks"
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 10809,
+      "protocol": "http",
+      "settings": {
+        "allowTransparent": false
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ],
+        "enabled": true,
+        "routeOnly": true
+      },
+      "tag": "http"
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "hysteria",
+      "settings": {
+        "address": "194.55.239.90",
+        "port": 443,
+        "version": 2
+      },
+      "streamSettings": {
+        "network": "hysteria",
+        "security": "tls",
+        "finalmask": {
+          "quicParams": {
+            "congestion": "bbr",
+            "debug": false
+          }
+        },
+        "hysteriaSettings": {
+          "auth": "37f735364c8e90dac70ed495c952cf00",
+          "version": 2
+        },
+        "tlsSettings": {
+          "alpn": [
+            "h3"
+          ],
+          "fingerprint": "qq",
+          "serverName": "5post-gate.x5.ru",
+          "pinnedPeerCertSha256": "b0f095eddc3e70a48da368ae99fe9f4634faf6f23b3cf7e55c7050323eabbfc9"
+        }
+      },
+      "tag": "proxy"
+    },
+    {
+      "protocol": "freedom",
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "block"
+    }
+  ],
+  "routing": {
+    "domainMatcher": "hybrid",
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "dns_in"
+        ],
+        "outboundTag": "proxy"
+      },
+      {
+        "type": "field",
+        "domain": [
+          "full:probe.malina24.xyz"
+        ],
+        "outboundTag": "proxy"
+      },
+      {
+        "type": "field",
+        "protocol": [
+          "bittorrent"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "domain": [
+          "domain:ru",
+          "domain:su",
+          "domain:xn--p1ai",
+          "domain:moscow",
+          "domain:2gis.com",
+          "domain:moex.com",
+          "domain:kontur.host",
+          "domain:megamarket.tech",
+          "domain:tank-online.com",
+          "domain:tbank-online.com",
+          "domain:tildaapi.com",
+          "domain:yandex.net",
+          "domain:yandex.com",
+          "domain:yandexcloud.net",
+          "domain:yastatic.net",
+          "full:go.yandex"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "ip": [
+          "194.55.239.90"
+        ],
+        "outboundTag": "direct"
+      }
+    ]
+  }
+}
 -- обычные сервера
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@54.38.137.161:443?security=tls&type=ws&fp=firefox&sni=pl06.abvpn.net&path=/websocket#🇵🇱 Польша RNXhub VPN
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@81.90.31.208:443?security=reality&type=xhttp&path=%2F99ad04ff-593f-47e8-ad0e-dc29d11446d6&host=www.aviasales.com&sni=www.aviasales.com&fp=edge&pbk=PE9mzsnJ_wNPPxxPb-s2rD7qNQuyrFarLkB4aGiAc0Y&sid=047a2a40#🇪🇪 Эстония RNXhub VPN
