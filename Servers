@@ -133,7 +133,9 @@ vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@laoye.in-gect.fun:2053?encryption=n
 
 
 
-
+vless://cd4528f2-bf53-40ad-8c00-b06f1647cb27@151.101.111.37:443/?type=xhttp&encryption=none&flow=&host=ovd11.global.ssl.fastly.net&path=/&mode=packet-up&security=tls&sni=accounts.fastly.com&alpn=h3&fp=chrome#🇺🇸 США
+vless://cd4528f2-bf53-40ad-8c00-b06f1647cb27@151.101.111.37:443/?type=xhttp&encryption=none&flow=&host=oh1.global.ssl.fastly.net&path=/&mode=packet-up&security=tls&sni=accounts.fastly.com&alpn=h3&fp=chrome#🇺🇸 США
+vless://da4747a6-be0d-4c1b-90f4-d82ec3012be2@104.18.1.1:2053/?type=ws&encryption=none&flow=&host=music1000.melobitmusic1.ir&path=/&security=tls&sni=music1000.melobitmusic1.ir&alpn=h3,h2,http/1.1&fp=ios#🇨🇦 Канада
 vless://6cdf70e8-7511-414e-b521-edbeffbe1a40@api.yandex-dev.online:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=api.yandex-dev.online&fp=qq&pbk=IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0&sid=122218f4c1f172e4&type=tcp#🇷🇺 Россия
 vless://6cdf70e8-7511-414e-b521-edbeffbe1a40@at.c2horizon.app:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=at.c2horizon.app&fp=qq&pbk=IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0&sid=122218f4c1f172e4&type=tcp#🇩🇪 ФРГ
 vless://6cdf70e8-7511-414e-b521-edbeffbe1a40@am.c2horizon.app:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=am.c2horizon.app&fp=qq&pbk=IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0&sid=122218f4c1f172e4&type=tcp#🇦🇲 Армения
