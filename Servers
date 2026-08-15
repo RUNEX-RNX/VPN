@@ -5,9 +5,11 @@
 #announce: base64:8J+MjSBSTlhodWIgVlBOIPCfjI4K8J+ToiDQt9Cw0YXQvtC00LjRgtC1INCyINGC0LPQuiBAUlVORVhfWF9TQ1JJUFQK8J+TsSDQv9C+INCy0L7Qv9GA0L7RgdCw0Lwg0L/QuNGB0LDRgtGMIEBSVU5FWHNjcmlwdArwn5iOINGD0LTQsNGH0Lgg0LIg0LjRgdC/0L7Qu9GM0LfQvtCy0LDQvdC40Lgg
 
 -- обход глушилок
-vless://67q52q67-q67q-q67q-q67q-q67q67q9q67q@67.677.333.677:67?encryption=none&security=reality&sni=t.me/KFS_sigma&fp=chrome&pbk=OxrWyTp8pvs70d868MxvSt5fYKSkF0OXyt0eRqMZjwM&sid=f8b2c4e91a037d65&flow=xtls-rprx-vision#↓Обход глушилок↓
+vless://67q52q67-q67q-q67q-q67q-q67q67q9q67q@67.677.333.677:67?encryption=none&security=reality&sni=t.me/KFS_sigma&fp=chrome&pbk=OxrWyTp8pvs70d868MxvSt5fYKSkF0OXyt0eRqMZjwM&sid=f8b2c4e91a037d65&flow=xtls-rprx-vision#↓Обход белых списков↓
 
-vless://67q52q67-q67q-q67q-q67q-q67q67q9q67q@67.677.333.677:67?encryption=none&security=reality&sni=t.me/KFS_sigma&fp=chrome&pbk=OxrWyTp8pvs70d868MxvSt5fYKSkF0OXyt0eRqMZjwM&sid=f8b2c4e91a037d65&flow=xtls-rprx-vision#↑Обход глушилок↑
+vless://fd12bf77-bca4-4ccc-8bd0-76a2cfc5985a@194.55.239.164:443?encryption=none&security=reality&type=raw&sni=ads.vk.ru&fp=firefox&pbk=sdnD0vxmj8kHBOoVM8TE9IyBCGwnKNB8hZVaHp_Zfjk&sid=c427&flow=xtls-rprx-vision#🇪🇺 Обход белых списков⚡
+
+vless://67q52q67-q67q-q67q-q67q-q67q67q9q67q@67.677.333.677:67?encryption=none&security=reality&sni=t.me/KFS_sigma&fp=chrome&pbk=OxrWyTp8pvs70d868MxvSt5fYKSkF0OXyt0eRqMZjwM&sid=f8b2c4e91a037d65&flow=xtls-rprx-vision#↑Обход белых списков↑
 -- обычные сервера
 vless://1a8aa3c0-7741-49dd-adbc-dcc629f6b938@178.154.208.44:443?encryption=none&security=reality&type=raw&sni=smartcaptcha.yandexcloud.net&pbk=oX_8IyRmI_X4pPWaGTbduLyvlZWwLkZlxJKmtvjmqEg&sid=03a70b17f8036009&flow=xtls-rprx-vision# 🇷🇺 Россия
 vless://bd33c069-8f8c-4da3-9d14-9f539597ab66@176.109.88.216:443?encryption=none&security=reality&sni=api-maps.yandex.ru&fp=firefox&pbk=oqRus6Z_Q1jqJaTEPu7ENbRL0-XKOw54K0jwCCGLtEk&sid=a9c4f17e3b62d8&flow=xtls-rprx-vision#🇷🇺 Россия 
@@ -15,7 +17,6 @@ vless://41da9cd0-b02c-427a-b74e-7e402c610ae4@193.233.246.80:8443?encryption=none
 vless://8491e506-02d9-4ad7-8fce-73aae002cdf3@84.201.129.249:443?encryption=none&security=reality&sni=eh1.vk.ru&fp=chrome&pbk=CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw&sid=99e78ee91698aaaa&flow=xtls-rprx-vision#🇷🇺 Россия
 vless://8491e506-02d9-4ad7-8fce-73aae002cdf3@84.201.129.249:443?encryption=none&security=reality&type=raw&sni=eh2.vk.ru&fp=firefox&pbk=CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw&sid=df5f7ec1de636bbb&flow=xtls-rprx-vision#🇷🇺 Россия
 vless://870541f4-b3a7-07d0-af4b-7588d36e2dac@139.100.197.28:52006?encryption=none&security=tls&sni=search.setlisting.ru&fp=qq&flow=xtls-rprx-vision#🇷🇺 Россия
-vless://fd12bf77-bca4-4ccc-8bd0-76a2cfc5985a@194.55.239.164:443?encryption=none&security=reality&type=raw&sni=ads.vk.ru&fp=firefox&pbk=sdnD0vxmj8kHBOoVM8TE9IyBCGwnKNB8hZVaHp_Zfjk&sid=c427&flow=xtls-rprx-vision#🇷🇺 Россия
 vless://130e6aab-9eba-441e-9021-22cbccc72832@176.109.106.34:9888?encryption=none&security=reality&type=grpc&sni=dl.google.com&fp=firefox&pbk=bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU&sid=aabbccdd&serviceName=grpc-tunnel&mode=gun#🇷🇺 Россия
 vless://553e3253-c454-431d-a7e6-42bc06ea5e14@176.109.108.83:9830?encryption=none&security=reality&type=grpc&sni=dl.google.com&fp=android&pbk=bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU&sid=aabb&serviceName=grpc-tunnel&mode=gun#🇷🇺 Россия
 vless://9500cf8b-020a-4a70-906c-e14bb5375875@85.209.135.10:443?encryption=none&security=reality&sni=www.sciencedirect.com&fp=firefox&pbk=cNWgfJHerzIEb0RXxncP8R9Ex8-FkALOtbhneEIHpR0&sid=a1b2c4d4a1b2c5d5&flow=xtls-rprx-vision#🇷🇺 Россия
