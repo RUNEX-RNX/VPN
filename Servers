@@ -263,4 +263,39 @@ vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@5.61.46.9:443?encryption=none&secur
 vless://06d44c57-8e1a-41f4-b9c4-65d35869e078@fl05.skorostnet.space:13868?encryption=none&security=reality&sni=www.epicgames.com&fp=qq&pbk=8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk&sid=e852dc&flow=xtls-rprx-vision#🇫🇮 Finland 8
 vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@41.216.182.105:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇸🇪 Sweden
 vless://7ce54bb3-d612-4aa7-be08-089d3c461d53@13.249.8.83:443?encryption=none&security=tls&type=ws&sni=d1yxsk0zprgivr.cloudfront.net&fp=firefox#🇸🇪 Sweden 2
-vless://814bd064-544d-4255-a070-5705c03f6da9@3.114.220.22:10583?encryption=none&security=reality&sni=www.apple.com&fp=chrome&pbk=k2hPp
+vless://814bd064-544d-4255-a070-5705c03f6da9@3.114.220.22:10583?encryption=none&security=reality&sni=www.apple.com&fp=chrome&pbk=k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0&sid=48050fab&flow=xtls-rprx-vision#🇯🇵 Japan 13
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@88.198.82.153:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇩🇪 Germany 8
+vless://0b0915d7-6800-4580-a44b-77d84f105e6a@185.79.138.71:448?encryption=none&security=reality&sni=www.samsung.com&fp=chrome&pbk=CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8&sid=cd21e552537c7c0b#🇫🇮 Finland 9
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@188.253.26.128:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇳🇱 Netherlands 14
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@38.244.154.149:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇪🇪 Estonia
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@193.42.62.63:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇫🇷 France
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@89.46.131.91:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇳🇱 Netherlands 15
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@185.36.143.71:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇳🇱 Netherlands 16
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@91.232.114.148:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇳🇱 Netherlands 17
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@65.108.245.196:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇫🇮 Finland 10
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@86.107.197.239:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&alpn=http/1.1&host=vod.ensf.top&path=/api/v1/irc#🇳🇱 Netherlands 18
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@85.234.100.221:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇩🇪 Germany 9
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@109.176.207.168:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&alpn=http/1.1&host=vod.ensf.top&path=/api/v1/irc#🇳🇱 Netherlands 19
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@194.146.24.240:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇬🇧 United Kingdom 3
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@57.128.181.125:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇬🇧 United Kingdom 4
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@95.168.174.248:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇳🇱 Netherlands 20
+vless://8491e506-02d9-4ad7-8fce-73aae002cdf3@188.72.103.3:443?encryption=none&security=tls&type=ws&sni=cdn.tracker.yandex.net&fp=firefox&host=stream.tickerflux.link&path=/api/v1/markets/8a7fb980ad/stream#🇷🇺 Russian Federation 2
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@57.128.182.21:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇬🇧 Британия
+vless://06d44c57-8e1a-41f4-b9c4-65d35869e078@78.17.112.103:13868?encryption=none&security=reality&sni=www.epicgames.com&fp=chrome&pbk=8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk&sid=e852dc&flow=xtls-rprx-vision#🇫🇮 Финляндия 18
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@212.23.221.62:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇳🇱 Нидерланды 25
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@3.68.62.122:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇩🇪 Германия 3
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@193.124.15.11:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇳🇱 Нидерланды 26
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@45.143.200.245:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇨🇭 Швейцария
+vless://7ce54bb3-d612-4aa7-be08-089d3c461d53@18.239.83.52:443?encryption=none&security=tls&type=ws&sni=d1yxsk0zprgivr.cloudfront.net&fp=chrome&host=d1yxsk0zprgivr.cloudfront.net&path=/#🇳🇱 Нидерланды 27
+vless://851ed0d8-a37b-452d-8ef2-5b6c2d28a060@78.159.247.253:2027?encryption=none&security=reality&sni=storage.yandex.net&fp=chrome&pbk=ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo&sid=dc8109baf0f607ea&flow=xtls-rprx-vision#🇨🇿 Чешская республика 3
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@140.238.208.210:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇨🇭 Швейцария 2
+ss://YWVzLTEyOC1nY206U3lTV0RhUDhybTFORUswd2RMZG9hVjVDbGtTakZEZnc=@antony.athforce.ir:51058#🇫🇷 Франция 6
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@77.221.136.148:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇸🇪 Швеция
+trojan://ND91608427@pet-ghost.rooster465.autos:443?security=tls&sni=pet-ghost.rooster465.autos#🇺🇸 США 13
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@94.159.110.41:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇩🇪 ФРГ 4
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@194.147.173.116:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&host=vod.ensf.top&path=/api/v1/irc#🇨🇭 Швейцария 3
+vless://06d44c57-8e1a-41f4-b9c4-65d35869e078@78.17.112.103:13868?encryption=none&security=reality&sni=www.epicgames.com&fp=chrome&pbk=8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk&sid=e852dc&flow=xtls-rprx-vision#🇫🇮 Финляндия 19
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@103.161.237.54:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&host=vod.ensf.top&path=/api/v1/irc#🇦🇫 Афганистан
+vless://4bf5a71c-d726-4585-b095-7396675706d5@72.56.81.165:40443?encryption=none&security=reality&sni=deepl.com&pbk=D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU&sid=c84f&flow=xtls-rprx-vision#🇳🇱 Нидерланды 28
+vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@103.161.237.54:443?encryption=none&security=tls&type=ws&sni=vod.ensf.top&fp=chrome&path=/api/v1/irc#🇦🇫 Афганистан 2
+trojan://AE62539071@capable-jay.rooster465.autos:443?security=tls#🇰🇷 Республика Корея
