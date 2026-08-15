@@ -6,64 +6,14 @@
 
 -- обход глушилок
 vless://67q52q67-q67q-q67q-q67q-q67q67q9q67q@67.677.333.677:67?encryption=none&security=reality&sni=t.me/KFS_sigma&fp=chrome&pbk=OxrWyTp8pvs70d868MxvSt5fYKSkF0OXyt0eRqMZjwM&sid=f8b2c4e91a037d65&flow=xtls-rprx-vision#↓Обход глушилок↓
-[
+
 {
-  "remarks": "🇺🇸 Белые списки",
-  "meta": {
-    "serverDescription": "Авто выбор"
-  },
-  "log": {
-    "loglevel": "none",
-    "access": "none",
-    "error": "none"
-  },
-  "policy": {
-    "levels": {
-      "0": {
-        "handshake": 4,
-        "connIdle": 600,
-        "uplinkOnly": 2,
-        "downlinkOnly": 5,
-        "bufferSize": 4
-      }
-    },
-    "system": {
-      "statsInboundUplink": false,
-      "statsInboundDownlink": false,
-      "statsOutboundUplink": false,
-      "statsOutboundDownlink": false
-    }
-  },
   "dns": {
-    "tag": "dns_in",
-    "queryStrategy": "UseIPv4",
-    "disableCache": false,
     "servers": [
-      {
-        "address": "https://77.88.8.8/dns-query",
-        "domains": [
-          "domain:ru",
-          "domain:su",
-          "domain:xn--p1ai",
-          "domain:moscow",
-          "domain:2gis.com",
-          "domain:moex.com",
-          "domain:kontur.host",
-          "domain:megamarket.tech",
-          "domain:tank-online.com",
-          "domain:tbank-online.com",
-          "domain:tildaapi.com",
-          "domain:yandex.net",
-          "domain:yandex.com",
-          "domain:yandexcloud.net",
-          "domain:yastatic.net",
-          "full:go.yandex"
-        ],
-        "skipFallback": true
-      },
-      "https://8.8.8.8/dns-query",
-      "localhost"
-    ]
+      "1.1.1.1",
+      "8.8.8.8"
+    ],
+    "queryStrategy": "UseIPv4"
   },
   "inbounds": [
     {
@@ -75,203 +25,117 @@ vless://67q52q67-q67q-q67q-q67q-q67q67q9q67q@67.677.333.677:67?encryption=none&s
         "udp": true
       },
       "sniffing": {
+        "enabled": true,
         "destOverride": [
           "http",
           "tls",
           "quic"
-        ],
-        "enabled": true,
-        "routeOnly": true
+        ]
       },
       "tag": "socks"
-    },
-    {
-      "listen": "127.0.0.1",
-      "port": 10809,
-      "protocol": "http",
-      "settings": {
-        "allowTransparent": false
-      },
-      "sniffing": {
-        "destOverride": [
-          "http",
-          "tls",
-          "quic"
-        ],
-        "enabled": true,
-        "routeOnly": true
-      },
-      "tag": "http"
     }
   ],
-  "observatory": {
-    "enableConcurrency": true,
-    "probeInterval": "1m",
-    "probeUrl": "http://probe.malina24.xyz/generate_204",
-    "subjectSelector": [
-      "srv-01-8e92097a",
-      "srv-02-fbab0cfb"
-    ]
-  },
   "outbounds": [
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "95.163.232.183",
-            "port": 443,
+            "address": "138.16.129.25",
+            "port": 7443,
             "users": [
               {
-                "encryption": "none",
-                "id": "8d76b0b5-aa3e-4efb-a192-8a044ab6eddf"
+                "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "5post.gate.v1"
-        },
+        "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "fingerprint": "qq",
-          "publicKey": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
-          "serverName": "5post-gate.x5.ru",
-          "shortId": "abcd",
-          "show": false
-        },
-        "sockopt": {
-          "tcpKeepAliveInterval": 15,
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true
+          "serverName": "www.aviasales.com",
+          "fingerprint": "firefox",
+          "publicKey": "5aQbjotbruol_lIeJVnLQ6BZ4jsE24WuENKWWNZk7HE",
+          "shortId": "f21e8225",
+          "spiderX": "/"
         }
       },
-      "tag": "srv-01-8e92097a"
+      "tag": "🇷🇺 Россия"
     },
     {
-      "protocol": "hysteria",
+      "protocol": "vless",
       "settings": {
-        "address": "194.55.239.90",
-        "port": 443,
-        "version": 2
+        "vnext": [
+          {
+            "address": "ru05.abvpn.ru",
+            "port": 443,
+            "users": [
+              {
+                "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
       },
       "streamSettings": {
-        "network": "hysteria",
+        "network": "ws",
         "security": "tls",
-        "finalmask": {
-          "quicParams": {
-            "congestion": "bbr",
-            "debug": false
-          }
-        },
-        "hysteriaSettings": {
-          "auth": "37f735364c8e90dac70ed495c952cf00",
-          "version": 2
-        },
         "tlsSettings": {
-          "alpn": [
-            "h3"
-          ],
-          "fingerprint": "qq",
-          "serverName": "5post-gate.x5.ru",
-          "pinnedPeerCertSha256": "b0f095eddc3e70a48da368ae99fe9f4634faf6f23b3cf7e55c7050323eabbfc9"
+          "serverName": "ru05.abvpn.ru",
+          "allowInsecure": false,
+          "fingerprint": "firefox"
+        },
+        "wsSettings": {
+          "path": "/websocket"
         }
       },
-      "tag": "srv-02-fbab0cfb"
+      "tag": "🇷🇺 Россия #2"
     },
     {
       "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIP"
+      },
       "tag": "direct"
     },
     {
       "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      },
       "tag": "block"
     }
   ],
   "routing": {
-    "domainMatcher": "hybrid",
     "domainStrategy": "IPIfNonMatch",
-    "balancers": [
-      {
-        "fallbackTag": "srv-01-8e92097a",
-        "selector": [
-          "srv-01-8e92097a",
-          "srv-02-fbab0cfb"
-        ],
-        "strategy": {
-          "type": "leastPing"
-        },
-        "tag": "bal_auto"
-      }
-    ],
     "rules": [
       {
-        "type": "field",
         "inboundTag": [
-          "dns_in"
+          "socks"
         ],
-        "balancerTag": "bal_auto"
-      },
+        "port": "0-65535",
+        "balancerTag": "balancer"
+      }
+    ],
+    "balancers": [
       {
-        "type": "field",
-        "domain": [
-          "full:probe.malina24.xyz"
-        ],
-        "balancerTag": "bal_auto"
-      },
-      {
-        "type": "field",
-        "protocol": [
-          "bittorrent"
-        ],
-        "outboundTag": "direct"
-      },
-      {
-        "type": "field",
-        "domain": [
-          "domain:ru",
-          "domain:su",
-          "domain:xn--p1ai",
-          "domain:moscow",
-          "domain:2gis.com",
-          "domain:moex.com",
-          "domain:kontur.host",
-          "domain:megamarket.tech",
-          "domain:tank-online.com",
-          "domain:tbank-online.com",
-          "domain:tildaapi.com",
-          "domain:yandex.net",
-          "domain:yandex.com",
-          "domain:yandexcloud.net",
-          "domain:yastatic.net",
-          "full:go.yandex"
-        ],
-        "outboundTag": "direct"
-      },
-      {
-        "type": "field",
-        "ip": [
-          "95.163.232.183",
-          "194.55.239.90"
-        ],
-        "outboundTag": "direct"
-      },
-      {
-        "type": "field",
-        "inboundTag": [
-          "socks",
-          "http"
-        ],
-        "network": "tcp,udp",
-        "balancerTag": "bal_auto"
+        "tag": "balancer",
+        "selector": [
+          "🇷🇺 Россия",
+          "🇷🇺 Россия #2"
+        ]
       }
     ]
-  }
+  },
+  "remarks": "🇷🇺 Россия"
 }
-]
+
 vless://67q52q67-q67q-q67q-q67q-q67q67q9q67q@67.677.333.677:67?encryption=none&security=reality&sni=t.me/KFS_sigma&fp=chrome&pbk=OxrWyTp8pvs70d868MxvSt5fYKSkF0OXyt0eRqMZjwM&sid=f8b2c4e91a037d65&flow=xtls-rprx-vision#↑Обход глушилок↑
 -- обычные сервера
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@138.16.129.25:7443?encryption=none&security=reality&sni=www.aviasales.com&fp=firefox&pbk=5aQbjotbruol_lIeJVnLQ6BZ4jsE24WuENKWWNZk7HE&sid=f21e8225&spx=/#🇷🇺 Россия
