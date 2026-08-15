@@ -7,134 +7,187 @@
 -- обход глушилок
 vless://67q52q67-q67q-q67q-q67q-q67q67q9q67q@67.677.333.677:67?encryption=none&security=reality&sni=t.me/KFS_sigma&fp=chrome&pbk=OxrWyTp8pvs70d868MxvSt5fYKSkF0OXyt0eRqMZjwM&sid=f8b2c4e91a037d65&flow=xtls-rprx-vision#↓Обход глушилок↓
 
-{
-  "dns": {
-    "servers": [
-      "1.1.1.1",
-      "8.8.8.8"
-    ],
-    "queryStrategy": "UseIPv4"
-  },
-  "inbounds": [
-    {
-      "listen": "127.0.0.1",
-      "port": 10808,
-      "protocol": "socks",
-      "settings": {
-        "auth": "noauth",
-        "udp": true
-      },
-      "sniffing": {
-        "enabled": true,
-        "destOverride": [
-          "http",
-          "tls",
-          "quic"
-        ]
-      },
-      "tag": "socks"
-    }
-  ],
-  "outbounds": [
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "138.16.129.25",
-            "port": 7443,
-            "users": [
-              {
-                "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.aviasales.com",
-          "fingerprint": "firefox",
-          "publicKey": "5aQbjotbruol_lIeJVnLQ6BZ4jsE24WuENKWWNZk7HE",
-          "shortId": "f21e8225",
-          "spiderX": "/"
-        }
-      },
-      "tag": "🇷🇺 Россия"
+[
+  {
+    "dns": {
+      "servers": [
+        "1.1.1.1",
+        "8.8.8.8"
+      ],
+      "queryStrategy": "UseIPv4"
     },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ru05.abvpn.ru",
-            "port": 443,
-            "users": [
-              {
-                "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ru05.abvpn.ru",
-          "allowInsecure": false,
-          "fingerprint": "firefox"
+    "inbounds": [
+      {
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true
         },
-        "wsSettings": {
-          "path": "/websocket"
-        }
-      },
-      "tag": "🇷🇺 Россия #2"
-    },
-    {
-      "protocol": "freedom",
-      "settings": {
-        "domainStrategy": "UseIP"
-      },
-      "tag": "direct"
-    },
-    {
-      "protocol": "blackhole",
-      "settings": {
-        "response": {
-          "type": "http"
-        }
-      },
-      "tag": "block"
-    }
-  ],
-  "routing": {
-    "domainStrategy": "IPIfNonMatch",
-    "rules": [
-      {
-        "inboundTag": [
-          "socks"
-        ],
-        "port": "0-65535",
-        "balancerTag": "balancer"
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        },
+        "tag": "socks"
       }
     ],
-    "balancers": [
+    "outbounds": [
       {
-        "tag": "balancer",
-        "selector": [
-          "🇷🇺 Россия",
-          "🇷🇺 Россия #2"
-        ]
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "138.16.129.25",
+              "port": 7443,
+              "users": [
+                {
+                  "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.aviasales.com",
+            "fingerprint": "firefox",
+            "publicKey": "5aQbjotbruol_lIeJVnLQ6BZ4jsE24WuENKWWNZk7HE",
+            "shortId": "f21e8225",
+            "spiderX": "/"
+          }
+        },
+        "tag": "🇷🇺 Россия"
+      },
+      {
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "UseIP"
+        },
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "settings": {
+          "response": {
+            "type": "http"
+          }
+        },
+        "tag": "block"
       }
-    ]
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "socks"
+          ],
+          "port": "0-65535",
+          "outboundTag": "🇷🇺 Россия"
+        }
+      ]
+    },
+    "remarks": "🇷🇺 Россия"
   },
-  "remarks": "🇷🇺 Россия"
-}
+  {
+    "dns": {
+      "servers": [
+        "1.1.1.1",
+        "8.8.8.8"
+      ],
+      "queryStrategy": "UseIPv4"
+    },
+    "inbounds": [
+      {
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        },
+        "tag": "socks"
+      }
+    ],
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "ru05.abvpn.ru",
+              "port": 443,
+              "users": [
+                {
+                  "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "ru05.abvpn.ru",
+            "allowInsecure": false,
+            "fingerprint": "firefox"
+          },
+          "wsSettings": {
+            "path": "/websocket"
+          }
+        },
+        "tag": "🇷🇺 Россия"
+      },
+      {
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "UseIP"
+        },
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "settings": {
+          "response": {
+            "type": "http"
+          }
+        },
+        "tag": "block"
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "socks"
+          ],
+          "port": "0-65535",
+          "outboundTag": "🇷🇺 Россия"
+        }
+      ]
+    },
+    "remarks": "🇷🇺 Россия"
+  }
+]
 
 vless://67q52q67-q67q-q67q-q67q-q67q67q9q67q@67.677.333.677:67?encryption=none&security=reality&sni=t.me/KFS_sigma&fp=chrome&pbk=OxrWyTp8pvs70d868MxvSt5fYKSkF0OXyt0eRqMZjwM&sid=f8b2c4e91a037d65&flow=xtls-rprx-vision#↑Обход глушилок↑
 -- обычные сервера
