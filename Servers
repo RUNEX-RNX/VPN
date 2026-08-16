@@ -16,11 +16,9 @@ vless://1a8aa3c0-7741-49dd-adbc-dcc629f6b938@178.154.208.44:443?encryption=none&
 vless://41da9cd0-b02c-427a-b74e-7e402c610ae4@193.233.246.80:8443?encryption=none&security=reality&type=grpc&sni=ads.x5.ru&fp=chrome&pbk=sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg&sid=844352756c1fabba&serviceName=grpc-yandex&mode=gun#🇷🇺 Россия 
 vless://8491e506-02d9-4ad7-8fce-73aae002cdf3@84.201.129.249:443?encryption=none&security=reality&sni=eh1.vk.ru&fp=chrome&pbk=CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw&sid=99e78ee91698aaaa&flow=xtls-rprx-vision#🇷🇺 Россия
 vless://8491e506-02d9-4ad7-8fce-73aae002cdf3@84.201.129.249:443?encryption=none&security=reality&type=raw&sni=eh2.vk.ru&fp=firefox&pbk=CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw&sid=df5f7ec1de636bbb&flow=xtls-rprx-vision#🇷🇺 Россия
-vless://870541f4-b3a7-07d0-af4b-7588d36e2dac@139.100.197.28:52006?encryption=none&security=tls&sni=search.setlisting.ru&fp=qq&flow=xtls-rprx-vision#🇷🇺 Россия
 vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@193.124.15.11:443?&security=tls&fp=chrome&alpn=http/1.1&sni=vod.ensf.top&type=ws&headerType=none&host=vod.ensf.top&path=/api/v1/irc#🇷🇺 Россия
 vless://130e6aab-9eba-441e-9021-22cbccc72832@176.109.106.34:9888?encryption=none&security=reality&type=grpc&sni=dl.google.com&fp=firefox&pbk=bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU&sid=aabbccdd&serviceName=grpc-tunnel&mode=gun#🇷🇺 Россия
 vless://553e3253-c454-431d-a7e6-42bc06ea5e14@176.109.108.83:9830?encryption=none&security=reality&type=grpc&sni=dl.google.com&fp=android&pbk=bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU&sid=aabb&serviceName=grpc-tunnel&mode=gun#🇷🇺 Россия
-vless://9500cf8b-020a-4a70-906c-e14bb5375875@85.209.135.10:443?encryption=none&security=reality&sni=www.sciencedirect.com&fp=firefox&pbk=cNWgfJHerzIEb0RXxncP8R9Ex8-FkALOtbhneEIHpR0&sid=a1b2c4d4a1b2c5d5&flow=xtls-rprx-vision#🇷🇺 Россия
 vless://e27dce75-b33b-49b6-afb7-17e29ce67bb1@92.63.99.228:7899?encryption=none&security=reality&sni=tradingview.com&fp=firefox&pbk=YXVnk7FdM6IXOlFqisWurmtfmoftXLqqsrJ-JqqP6Rc&flow=xtls-rprx-vision#🇷🇺 Россия
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@138.16.129.25:7443?encryption=none&security=reality&sni=www.aviasales.com&fp=firefox&pbk=5aQbjotbruol_lIeJVnLQ6BZ4jsE24WuENKWWNZk7HE&sid=f21e8225&spx=/#🇷🇺 Россия
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@ru05.abvpn.ru:443?encryption=none&security=tls&type=ws&sni=ru05.abvpn.ru&fp=firefox&path=/websocket#🇷🇺 Россия
@@ -34,42 +32,23 @@ vless://8491e506-02d9-4ad7-8fce-73aae002cdf3@84.201.129.249:443?encryption=none&
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@de13.abvpn.ru:443?encryption=none&security=tls&type=ws&sni=de13.abvpn.ru&fp=chrome&path=/websocket#🇩🇪 Германия
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@de58.abvpn.net:443?encryption=none&security=tls&type=xhttp&sni=de58.abvpn.net&fp=firefox&alpn=h2&host=de58.abvpn.net&path=/cc118a5c-3229-4c8f-b388-210f4a008a28/&mode=auto#🇩🇪 Германия
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@162.35.231.26:7443?encryption=none&security=reality&sni=ibm.com&fp=firefox&pbk=8lVMcx9pDO-yvO1Qb0wEXCqecntCUzrWuD-O8NNp1jY&sid=e40da98e&spx=/#🇩🇪 Германия
-vless://c32ef0e3-6f3b-4c5e-a560-16b8c85ec404@95.85.239.230:443?encryption=none&security=reality&sni=rasputin.linus-qanary.lol&fp=chrome&pbk=HYvULWO1KqHge0lNcpejfOI6zI_aqOIPZxB-QlYLyW4&sid=bd86&flow=xtls-rprx-vision#🇩🇪 Германия 
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE=@51.195.126.38:8388#🇩🇪 Германия
 trojan://AE62539071@dashing-bedbug.rooster465.autos:443?security=tls#🇩🇪 Германия 
  
-
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@74.50.11.22:7443?encryption=none&security=reality&type=grpc&sni=media3.abvphelp.cc&fp=firefox&pbk=irS7Lpd9rucKDGvI_DpF0kafL07DpNtrzyTvRxSeE3A&sid=4675c897&serviceName=grpc&mode=gun#🇺🇸 США
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@151.242.160.14:443?encryption=none&security=reality&type=grpc&sni=pl22.tcpnet.fun&fp=firefox&pbk=Z2hBT2p3cfSGTybbmlyeX7htyXLe1EAlv_A8lrDqoGU&sid=a6ff758e&serviceName=grpc&mode=gun#🇺🇸 США
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@198.255.96.49:443?encryption=none&security=reality&type=grpc&sni=media3.abvphelp.cc&fp=firefox&pbk=r0Zd3U_1WbesoH1dPE8tDJvnBKLRA5yLU3feArsMJxg&sid=e02b42d5&serviceName=grpc&mode=gun#🇺🇸 США
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5VEVYV0I2WEJIeXY5U2ZRSnpDU1JXQ25SWXV0RmRVWGcxd2JjYnV0eFB3WkU2VXhjdXJrYTNHa29hdGdFZFg0ODNYWlNIZUpwM2pYY1RTaExDUk04clBnTUYzdllOZlM=@autodiscover.fuzzyaytor.cyou:42982#🇺🇸 США
-
 
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@95.85.247.148:443?encryption=none&security=reality&sni=media.abvphelp.cc&fp=firefox&pbk=CjCg9ZSHWYG2SYfiHZiXRQhIUfKjo5kDDdigz2SXHXI&sid=8e70bba4&spx=/#🇳🇱 Нидерланды
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@138.16.141.59:7443?encryption=none&security=reality&sni=ibm.com&fp=firefox&pbk=RY7zkFQ01lI92jxNAyCa8T33UBW1fgpJgg8ZEqMA10k&sid=a09ff9f8&spx=/#🇳🇱 Нидерланды
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.182:8080#🇳🇱 Нидерланды
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.149:8080#🇳🇱 Нидерланды
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.2:8080#🇳🇱 Нидерланды
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcEtBQmNPcE5OQTBsNUcyQVZPbXc4@213.109.147.242:62685#🇳🇱 Нидерланды
-vless://4bf5a71c-d726-4585-b095-7396675706d5@72.56.81.165:40443?encryption=none&security=reality&sni=deepl.com&fp=chrome&pbk=D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU&sid=c84f&flow=xtls-rprx-vision&alpn=http/1.1#🇳🇱 Нидерланды
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.57:443#🇳🇱 Нидерланды
-trojan://AE62539071@thorough-falcon.rooster465.autos:443?security=tls#🇳🇱 Нидерланды 
 vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@51.158.206.98:23576?encryption=none&security=reality&sni=fuck.rkn&fp=chrome&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01&flow=xtls-rprx-vision#🇳🇱 Нидерланды
-vless://4480161e-2c59-4d37-8736-675c9af32bf1@netraidly.ru:40443?encryption=none&security=reality&sni=deepl.com&fp=qq&pbk=fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y&sid=01d1bf2d4755d40c&flow=xtls-rprx-vision#🇳🇱 Нидерланды
-vless://4bf5a71c-d726-4585-b095-7396675706d5@cdn.netraidly.ru:40443?encryption=none&security=reality&sni=deepl.com&fp=qq&pbk=D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU&sid=c84f&flow=xtls-rprx-vision#🇳🇱 Нидерланды
-vless://4480161e-2c59-4d37-8736-675c9af32bf1@netraidly.ru:40443?encryption=none&security=reality&sni=deepl.com&fp=qq&pbk=fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y&sid=01d1bf2d4755d40c&flow=xtls-rprx-vision#🇳🇱 Нидерланды 
-trojan://AE62539071@whole-woodcock.rooster465.autos:443?security=tls#🇳🇱 Нидерланды
-vless://851ed0d8-a37b-452d-8ef2-5b6c2d28a060@185.141.227.225:2027?encryption=none&security=reality&sni=storage.yandex.net&fp=firefox&pbk=ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo&sid=dc8109baf0f607ea&flow=xtls-rprx-vision#🇳🇱 Нидерланды
-vless://4480161e-2c59-4d37-8736-675c9af32bf1@72.56.92.177:40443?encryption=none&security=reality&sni=deepl.com&pbk=fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y&sid=01d1bf2d4755d40c&flow=xtls-rprx-vision#🇳🇱 Нидерланды
-vless://40de6299-d792-4868-8a82-411ead0aa943@144.124.246.55:443?encryption=none&security=reality&sni=gateway.icloud.com&fp=firefox&pbk=L0acYoTxKR5ix7LXAmP10cy06n2JjgkXTojGjtWAqww&sid=ed7b9bdfedb9b8e5&flow=xtls-rprx-vision#🇳🇱 Нидерланды 
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.155:8080#🇳🇱 Нидерланды 
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.15:443#🇳🇱 Нидерланды 
 
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@alb1.abvpn.ru:443?encryption=none&security=tls&type=ws&sni=alb1.abvpn.ru&fp=chrome&path=/websocket#🇦🇱 Албания 
 
-
-vless://af9471f2-9344-4d84-9fe1-72a264fde38e@153.80.241.60:8443?encryption=none&security=reality&sni=www.apple.com&fp=chrome&pbk=CX5f7EdRDtVEgZIgh_ZLE7xYOntoVpk2S_t9EFraJGs&flow=xtls-rprx-vision#🇫🇮 Финляндия
-vless://564082ff-cf3c-48db-9e10-8ad2312847b4@node15.mxvpn.dev:443?encryption=none&security=reality&sni=node15.mxvpn.dev&fp=firefox&pbk=TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw&sid=bbc68cec8bb8d2e3&flow=xtls-rprx-vision#🇫🇮 Финляндия 
 vless://06d44c57-8e1a-41f4-b9c4-65d35869e078@185.42.163.87:13868?encryption=none&security=reality&sni=www.epicgames.com&fp=firefox&pbk=8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk&sid=e852dc&flow=xtls-rprx-vision#🇫🇮 Финляндия
 vless://06d44c57-8e1a-41f4-b9c4-65d35869e078@fl02.skorostnet.space:13868?encryption=none&security=reality&sni=www.epicgames.com&fp=firefox&pbk=8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk&sid=e852dc&flow=xtls-rprx-vision#🇫🇮 Финляндия 
 vless://06d44c57-8e1a-41f4-b9c4-65d35869e078@fl02.skorostnet.space:13868?encryption=none&security=reality&sni=www.epicgames.com&fp=firefox&pbk=8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk&sid=e852dc&flow=xtls-rprx-vision#🇫🇮 Финляндия 
@@ -77,11 +56,15 @@ vless://0fbff144-bbed-44c0-972b-3ecb0d5579d6@95.216.27.15:2053?encryption=none&s
 vless://06d44c57-8e1a-41f4-b9c4-65d35869e078@2.57.242.77:13868?encryption=none&security=reality&sni=www.epicgames.com&fp=firefox&pbk=8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk&sid=e852dc&flow=xtls-rprx-vision#🇫🇮 Финляндия
 vless://06d44c57-8e1a-41f4-b9c4-65d35869e078@fl01.skorostnet.space:13868?encryption=none&security=reality&sni=www.epicgames.com&fp=qq&pbk=8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk&sid=e852dc&flow=xtls-rprx-vision#🇫🇮 Финляндия 
 vless://1cde7b4a-6dd7-4eb6-ba2e-41625d491300@149.33.36.32:443?encryption=none&security=reality&sni=smartcaptcha.yandexcloud.net&pbk=oX_8IyRmI_X4pPWaGTbduLyvlZWwLkZlxJKmtvjmqEg&sid=03a70b17f8036009&flow=xtls-rprx-vision#🇫🇮 Финляндия
-vless://3b9eb177-6f0c-4d49-be4a-7e5168569f45@pg-sw-bot.gigatapbot.top:47822?encryption=none&security=reality&sni=pg-bot.gigatapbot.top&fp=firefox&pbk=VWhynxStqii0ll4ttnUJWG4Qy9dJFXhZu6Y8OiIO5Vk&sid=c577182abe08e64c&flow=xtls-rprx-vision#🇫🇮 Финляндия
 vless://d8523317-503e-43ad-b2c3-e5f77d725848@31.76.46.138:20422?encryption=none&security=reality&sni=yahoo.com&fp=chrome&pbk=ZUQTvwYk_hDqSrw36uc18MkeEIXIGZZGsf5XWVwdqAQ&sid=90&spx=/#🇫🇮 Финляндия 
 vless://d8523317-503e-43ad-b2c3-e5f77d725848@31.76.46.138:20422?encryption=none&security=reality&sni=yahoo.com&fp=random&pbk=ZUQTvwYk_hDqSrw36uc18MkeEIXIGZZGsf5XWVwdqAQ&sid=90&spx=/#🇫🇮 Финляндия
 vless://06d44c57-8e1a-41f4-b9c4-65d35869e078@193.124.36.178:13868?encryption=none&security=reality&sni=www.epicgames.com&fp=firefox&pbk=8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk&sid=e852dc&flow=xtls-rprx-vision#🇫🇮 Финляндия 
-vless://7e760d89-a8f4-4a87-8f10-b4af28c61b7f@212.237.216.46:8443?encryption=none&security=tls&sni=fastcdn.intercom-home.online&fp=firefox&flow=xtls-rprx-vision#🇫🇮 Финляндия 
+vless://7e760d89-a8f4-4a87-8f10-b4af28c61b7f@212.237.216.46:8443?encryption=none&security=tls&sni=fastcdn.intercom-home.online&fp=firefox&flow=xtls-rprx-vision#🇫🇮 Финляндия
+vless://f234dfac-2b61-4943-b6e4-dcbc14575694@213.108.1.14:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=10XujgSZQDT5X5lmH0BLh6R99YDSieb5xvGuNXZtXDk&sid=005755e0cf80d989&spx=/&flow=xtls-rprx-vision#🇫🇮 Финляндия
+vless://f234dfac-2b61-4943-b6e4-dcbc14575694@213.108.1.244:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=e2Fii14L7LQHE81w7F6YW39RWNGx1VVpVxN2wYnsOQ4&sid=823af57632e5b8ec&spx=/&flow=xtls-rprx-vision#🇫🇮 Финляндия
+vless://f234dfac-2b61-4943-b6e4-dcbc14575694@213.108.1.14:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=10XujgSZQDT5X5lmH0BLh6R99YDSieb5xvGuNXZtXDk&sid=4d775f3a3580776d&spx=/&flow=xtls-rprx-vision#🇫🇮 Финляндия
+vless://f234dfac-2b61-4943-b6e4-dcbc14575694@213.108.1.244:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=e2Fii14L7LQHE81w7F6YW39RWNGx1VVpVxN2wYnsOQ4&sid=823af57632e5b8ec&spx=/&flow=xtls-rprx-vision#🇫🇮 Финляндия
+vless://f234dfac-2b61-4943-b6e4-dcbc14575694@213.108.1.244:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=e2Fii14L7LQHE81w7F6YW39RWNGx1VVpVxN2wYnsOQ4&sid=9cb7868839516f6f&spx=/&flow=xtls-rprx-vision#🇫🇮 Финляндия
 
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@gbr10.tcpdoor.net:443?encryption=none&security=reality&sni=www.samsung.com&fp=firefox&pbk=plcOxZYmgOH8cNMd0jM4ykZ2cM0JtIhXhmdhVR2ofm4&sid=c62d8e5c&spx=/#🇬🇧Великобритания
 vless://9e3de7f7-a595-4117-b1b6-dc41eb870ab1@144.31.213.225:443?encryption=none&security=reality&sni=www.cloudflare.com&fp=chrome&pbk=ABNRlkjlonYV9TOFYgjWwz0wn1s6sg_yCErsLYkU_Sg&sid=d6ff9019a77e354a&flow=xtls-rprx-vision#🇬🇧 Великобритания
@@ -97,6 +80,7 @@ vless://a289a3d3-5833-4b28-8809-ae72898a98d0@54.38.137.161:443?encryption=none&s
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@54.36.174.140:443#🇵🇱 Польша
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@pl140.vpnbook.com:443#🇵🇱 Польша
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWSnRzZ2xsRERKZk5tYVRl@64.176.73.160:8388#🇵🇱 Польша
+vless://f234dfac-2b61-4943-b6e4-dcbc14575694@45.137.43.43:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=fPalnpbqFtS0G453ym0_sCwcJuqPvKEU45WXRRpA2E8&sid=e950fa4d1e7aed62&spx=/&flow=xtls-rprx-vision#🇵🇱 Польша
 
 vless://a289a3d3-5833-4b28-8809-ae72898a98d0@80.96.113.49:443?encryption=none&security=reality&type=grpc&sni=s3node2.tcpdoor.net&fp=firefox&pbk=JwBs4X-rj_RvodEbShz1oKnSeztJHTPh1gzkBCEWgz4&sid=7ca22dfd&serviceName=grpc&mode=gun#🇲🇩 Молдова
 vless://b406bc51-9002-474c-beae-b194b02c91da@144.31.131.241:8443?encryption=none&security=reality&sni=mold.speedload.online&fp=chrome&pbk=J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs&sid=a20d3ed244c76426&flow=xtls-rprx-vision#🇲🇩 Молдова
@@ -120,6 +104,8 @@ trojan://humanity@104.16.174.46:443?security=tls&type=ws&sni=www.ignitelimit.com
 trojan://humanity@104.16.174.12:443?security=tls&type=ws&sni=www.ignitelimit.com&host=www.ignitelimit.com&path=/assignment#🇨🇦 Канада 
 vless://77777777-8a3e-6666-b6d1-a9c5f0e8b3a2@172.64.52.182:2087?encryption=none&security=tls&type=ws&sni=faxf32gkfzoxqv.fx6hsv0.ccwu.cc&fp=chrome#🇨🇦 Канада 
 
+vless://f234dfac-2b61-4943-b6e4-dcbc14575694@45.131.215.168:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=VU6bXKJDcfhaR4eGl_K1MDhsjGSHoBxnxaPvX9OwdnM&sid=13fb7c4c2d8dc456&spx=/&flow=xtls-rprx-vision#🇦🇹 Австрия
+
 vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@89.36.161.222:2053?encryption=none&security=reality&sni=vk.ru&fp=firefox&pbk=cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg&sid=d26f4703cdd30f4e&flow=xtls-rprx-vision#🇱🇻 Латвия
 vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@laoye.in-gect.fun:2053?encryption=none&security=reality&sni=vk.ru&fp=edge&pbk=cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg&sid=d26f4703cdd30f4e&flow=xtls-rprx-vision#🇱🇻 Латвия 
 vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@laoye.in-gect.fun:2053?encryption=none&security=reality&sni=vk.ru&fp=edge&pbk=cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg&sid=d26f4703cdd30f4e&flow=xtls-rprx-vision#🇱🇻 Латвия
@@ -131,18 +117,10 @@ vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@laoye.in-gect.fun:2053?encryption=n
 
 
 
-vless://f234dfac-2b61-4943-b6e4-dcbc14575694@213.108.1.14:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=10XujgSZQDT5X5lmH0BLh6R99YDSieb5xvGuNXZtXDk&sid=005755e0cf80d989&spx=/&flow=xtls-rprx-vision#🇫🇮 Финляндия
-vless://f234dfac-2b61-4943-b6e4-dcbc14575694@213.108.1.244:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=e2Fii14L7LQHE81w7F6YW39RWNGx1VVpVxN2wYnsOQ4&sid=823af57632e5b8ec&spx=/&flow=xtls-rprx-vision#🇫🇮 Финляндия 2
-vless://f234dfac-2b61-4943-b6e4-dcbc14575694@45.137.43.43:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=fPalnpbqFtS0G453ym0_sCwcJuqPvKEU45WXRRpA2E8&sid=e950fa4d1e7aed62&spx=/&flow=xtls-rprx-vision#🇵🇱 Польша
-vless://f234dfac-2b61-4943-b6e4-dcbc14575694@45.131.215.168:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=VU6bXKJDcfhaR4eGl_K1MDhsjGSHoBxnxaPvX9OwdnM&sid=13fb7c4c2d8dc456&spx=/&flow=xtls-rprx-vision#🇦🇹 Австрия
 vless://f234dfac-2b61-4943-b6e4-dcbc14575694@77.110.115.58:8080?encryption=none&security=reality&sni=api-maps.yandex.ru&fp=firefox&pbk=a4gzDiT4d3GfZCFqxM2Cv8Yv3GxhWP-euKCiDaiBZ1Y&sid=68485e84f5dea900&spx=/&flow=xtls-rprx-vision#🇺🇸 США
-vless://f234dfac-2b61-4943-b6e4-dcbc14575694@213.108.1.14:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=10XujgSZQDT5X5lmH0BLh6R99YDSieb5xvGuNXZtXDk&sid=4d775f3a3580776d&spx=/&flow=xtls-rprx-vision#🇫🇮 Финляндия 3
-vless://f234dfac-2b61-4943-b6e4-dcbc14575694@213.108.1.244:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=e2Fii14L7LQHE81w7F6YW39RWNGx1VVpVxN2wYnsOQ4&sid=823af57632e5b8ec&spx=/&flow=xtls-rprx-vision#🇫🇮 Финляндия 4
 vless://f234dfac-2b61-4943-b6e4-dcbc14575694@45.137.43.43:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=fPalnpbqFtS0G453ym0_sCwcJuqPvKEU45WXRRpA2E8&sid=e950fa4d1e7aed62&spx=/&flow=xtls-rprx-vision#🇵🇱 Польша 2
 vless://f234dfac-2b61-4943-b6e4-dcbc14575694@45.131.215.168:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=VU6bXKJDcfhaR4eGl_K1MDhsjGSHoBxnxaPvX9OwdnM&sid=13fb7c4c2d8dc456&spx=/&flow=xtls-rprx-vision#🇦🇹 Австрия 2
 vless://f234dfac-2b61-4943-b6e4-dcbc14575694@77.110.115.58:8080?encryption=none&security=reality&sni=api-maps.yandex.ru&fp=firefox&pbk=a4gzDiT4d3GfZCFqxM2Cv8Yv3GxhWP-euKCiDaiBZ1Y&sid=68485e84f5dea900&spx=/&flow=xtls-rprx-vision#🇺🇸 США 2
-vless://f234dfac-2b61-4943-b6e4-dcbc14575694@213.108.1.14:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=10XujgSZQDT5X5lmH0BLh6R99YDSieb5xvGuNXZtXDk&sid=4d775f3a3580776d&spx=/&flow=xtls-rprx-vision#🇫🇮 Финляндия 5
-vless://f234dfac-2b61-4943-b6e4-dcbc14575694@213.108.1.244:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=e2Fii14L7LQHE81w7F6YW39RWNGx1VVpVxN2wYnsOQ4&sid=9cb7868839516f6f&spx=/&flow=xtls-rprx-vision#🇫🇮 Финляндия 6
 vless://f234dfac-2b61-4943-b6e4-dcbc14575694@45.137.43.43:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=fPalnpbqFtS0G453ym0_sCwcJuqPvKEU45WXRRpA2E8&sid=ab3618805512b7b0&spx=/&flow=xtls-rprx-vision#🇵🇱 Польша 3
 vless://f234dfac-2b61-4943-b6e4-dcbc14575694@45.131.215.168:8080?encryption=none&security=reality&sni=www.apple.com&fp=firefox&pbk=VU6bXKJDcfhaR4eGl_K1MDhsjGSHoBxnxaPvX9OwdnM&sid=13fb7c4c2d8dc456&spx=/&flow=xtls-rprx-vision#🇦🇹 Австрия 3
 vless://f234dfac-2b61-4943-b6e4-dcbc14575694@77.110.115.58:8080?encryption=none&security=reality&sni=api-maps.yandex.ru&fp=firefox&pbk=a4gzDiT4d3GfZCFqxM2Cv8Yv3GxhWP-euKCiDaiBZ1Y&sid=54f02ac51faf5052&spx=/&flow=xtls-rprx-vision#🇺🇸 США 3
