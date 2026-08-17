@@ -1,9 +1,15 @@
 #profile-title: RNX vpn
 #subscription-userinfo: #subscription-userinfo: upload=0; download=73667279060992; total=75435293758455808; expire=151404336000
+#profile-update-interval: 1
+#providerid: провайдер
 #hide-settings: 1
-#support-url: https://t.me/RUNEX_X_SCRIPT
-#profile-web-page-url: https://t.me/RUNEXscript
-#announce: base64:8J+MjSBSTlhodWIgVlBOIPCfjI4K8J+ToiDQt9Cw0YXQvtC00LjRgtC1INCyINGC0LPQuiBAUlVORVhfWF9TQ1JJUFQK8J+TsSDQv9C+INCy0L7Qv9GA0L7RgdCw0Lwg0L/QuNGB0LDRgtGMIEBSVU5FWHNjcmlwdArwn5iOINGD0LTQsNGH0Lgg0LIg0LjRgdC/0L7Qu9GM0LfQvtCy0LDQvdC40Lgg
+#profile-web-page-url: https://t.me/RUNEX_X_SCRIPT
+#support-url: https://t.me/RUNEXscript
+#sub-info-text: Phlux vpn
+#sub-info-color: blue
+#sub-info-button-text: поддержка
+#sub-info-button-link: https://t.me/Phluxvpnbot
+--#announce: base64:8J+MjSBSTlhodWIgVlBOIPCfjI4K8J+ToiDQt9Cw0YXQvtC00LjRgtC1INCyINGC0LPQuiBAUlVORVhfWF9TQ1JJUFQK8J+TsSDQv9C+INCy0L7Qv9GA0L7RgdCw0Lwg0L/QuNGB0LDRgtGMIEBSVU5FWHNjcmlwdArwn5iOINGD0LTQsNGH0Lgg0LIg0LjRgdC/0L7Qu9GM0LfQvtCy0LDQvdC40Lgg
 
 -- обход глушилок
 vless://67q52q67-q67q-q67q-q67q-q67q67q9q67q@67.677.333.677:67?encryption=none&security=reality&sni=t.me/KFS_sigma&fp=chrome&pbk=OxrWyTp8pvs70d868MxvSt5fYKSkF0OXyt0eRqMZjwM&sid=f8b2c4e91a037d65&flow=xtls-rprx-vision#↓Обход белых списков↓
