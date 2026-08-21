@@ -1,3 +1,5 @@
+-- [#sub-info-text: 🌍 RNX VPN 🌎 #sub-info-color: red #sub-info-button-text: ТГК с инфой #sub-info-button-link: https://t.me/RNXvpn] []
+
 #profile-title: RNX vpn
 #subscription-userinfo: #subscription-userinfo: upload=0; download=73667279060992; total=75435293758455808; expire=151404336000
 #profile-update-interval: 6
@@ -5,12 +7,6 @@
 #hide-settings: 1
 #profile-web-page-url: https://t.me/RUNEX_X_SCRIPT
 #support-url: https://t.me/RUNEXscript
-#sub-info-text: 🌍 RNX VPN 🌎
-#sub-info-color: red
-#sub-info-button-text: ТГК с инфой
-#sub-info-button-link: https://t.me/RNXvpn
-
-
 
 vless://8491e506-02d9-4ad7-8fce-73aae002cdf3@84.201.135.86:443?security=reality&encryption=none&pbk=CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=eh3.vk.ru&sid=2f3e735aedc55aaf#⚪ 🇷🇺 Россия
 ss://MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206Zm52bzgycDl5NEFLeWtaWHlJRnRub2RGeTZmUW1XblZsSTJTdkdsZU9CMD0=@167.150.100.115:27755?type=tcp#🇸🇬 Сингапур
