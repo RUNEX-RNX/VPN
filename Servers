@@ -1,5 +1,5 @@
 -- [#sub-info-text: 🌍 RNX VPN 🌎 #sub-info-color: red #sub-info-button-text: ТГК с инфой #sub-info-button-link: https://t.me/RNXvpn] 
--- [для Wi-Fi ?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyBXaS1GaQ==] [для мобилы ?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQnNC+0LHQuNC70YzQvdC+0LPQviDQuNC90YLQtdGA0L3QtdGC0LAg]
+-- [для Wi-Fi ?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyBXaS1GaQ==] [для мобилы ]
 
 #providerid: qldQNa1m
 #profile-title: 𝗥𝗡𝗫 𝘃𝗽𝗻
@@ -10,18 +10,19 @@
 #hide-settings: 1
 #announce: base64:VEdLIEBSTlh2cG4KU3VwcG9ydCBAUk5YdnBuc3VwcG9ydA==
 
-vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@46.8.209.245:443?security=reality&encryption=none&pbk=tl-y_EBK2pPKhlChEPSYgKrXxrKUWomrQ8X9V8SP0xQ&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=helper-test.x5.ru&sid=4acb4c423d47ae19#🇷🇺 Россия
-vless://7301b9f4-17fa-4f17-8a20-4cfdb2afd3cb@79.174.92.133:8443?security=reality&encryption=none&pbk=M_V1dM8_wcpwnmh2VZp-s3LCBjy38ZWCRpxLrBc58Do&headerType=none&fp=firefox&spx=/&type=tcp&sni=max.ru&sid=a48d397391861a3c#⚪ 🇷🇺 Россия
-vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@46.243.142.239:8443?mode=gun&security=tls&encryption=none&type=grpc#🇳🇱 Нидерланды
-vless://97e967da-1d2b-439e-836b-a9d5a90496dc@31.129.42.239:443?mode=gun&security=reality&encryption=none&pbk=KwPeoAnP208rOsWWHSjhPKdpVzvIHpfBUltBHaBCSDs&fp=firefox&spx=/&type=grpc&serviceName=grpc8c948083b439&sni=vk.com&sid=d9114354#⚪ 🇷🇺 Россия
-vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@46.8.209.52:58443?mode=gun&security=tls&encryption=none&type=grpc#🇷🇺 Россия
-vless://7301b9f4-17fa-4f17-8a20-4cfdb2afd3cb@79.174.92.133:8443?security=reality&encryption=none&pbk=M_V1dM8_wcpwnmh2VZp-s3LCBjy38ZWCRpxLrBc58Do&headerType=none&fp=firefox&spx=/&type=tcp&sni=max.ru&sid=a48d397391861a3c#⚪ 🇷🇺 Россия
-vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@46.243.142.239:8443?security=reality&encryption=none&pbk=tl-y_EBK2pPKhlChEPSYgKrXxrKUWomrQ8X9V8SP0xQ&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=cdp.x5.ru&sid=4acb4c423d47ae19#🇳🇱 Нидерланды
-vless://97e967da-1d2b-439e-836b-a9d5a90496dc@31.129.42.239:443?mode=gun&security=reality&encryption=none&pbk=KwPeoAnP208rOsWWHSjhPKdpVzvIHpfBUltBHaBCSDs&fp=firefox&spx=/&type=grpc&serviceName=grpc8c948083b439&sni=vk.com&sid=d9114354#⚪ 🇷🇺 Россия
-vless://97e967da-1d2b-439e-836b-a9d5a90496dc@31.129.42.239:443?mode=gun&security=reality&encryption=none&pbk=KwPeoAnP208rOsWWHSjhPKdpVzvIHpfBUltBHaBCSDs&fp=firefox&spx=/&type=grpc&serviceName=grpc8c948083b439&sni=vk.com&sid=d9114354#⚪ 🇷🇺 Россия
-vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@78.159.245.59:59985?security=reality&encryption=none&pbk=tl-y_EBK2pPKhlChEPSYgKrXxrKUWomrQ8X9V8SP0xQ&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=cdp.x5.ru&sid=4acb4c423d47ae19#🇳🇱 Нидерланды
-vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@46.8.208.59:50051?mode=gun&security=tls&encryption=none&type=grpc#🇷🇺 Россия
-vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@78.159.245.59:59522?mode=gun&security=tls&encryption=none&type=grpc#🇳🇱 Нидерланды
+vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@46.8.209.245:443?security=reality&encryption=none&pbk=tl-y_EBK2pPKhlChEPSYgKrXxrKUWomrQ8X9V8SP0xQ&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=helper-test.x5.ru&sid=4acb4c423d47ae19#🇷🇺 Россия?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
+vless://7301b9f4-17fa-4f17-8a20-4cfdb2afd3cb@79.174.92.133:8443?security=reality&encryption=none&pbk=M_V1dM8_wcpwnmh2VZp-s3LCBjy38ZWCRpxLrBc58Do&headerType=none&fp=firefox&spx=/&type=tcp&sni=max.ru&sid=a48d397391861a3c#⚪ 🇷🇺 Россия?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
+vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@46.243.142.239:8443?mode=gun&security=tls&encryption=none&type=grpc#🇳🇱 Нидерланды?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
+vless://97e967da-1d2b-439e-836b-a9d5a90496dc@31.129.42.239:443?mode=gun&security=reality&encryption=none&pbk=KwPeoAnP208rOsWWHSjhPKdpVzvIHpfBUltBHaBCSDs&fp=firefox&spx=/&type=grpc&serviceName=grpc8c948083b439&sni=vk.com&sid=d9114354#⚪ 🇷🇺 Россия?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
+vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@46.8.209.52:58443?mode=gun&security=tls&encryption=none&type=grpc#🇷🇺 Россия?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
+vless://7301b9f4-17fa-4f17-8a20-4cfdb2afd3cb@79.174.92.133:8443?security=reality&encryption=none&pbk=M_V1dM8_wcpwnmh2VZp-s3LCBjy38ZWCRpxLrBc58Do&headerType=none&fp=firefox&spx=/&type=tcp&sni=max.ru&sid=a48d397391861a3c#⚪ 🇷🇺 Россия?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
+vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@46.243.142.239:8443?security=reality&encryption=none&pbk=tl-y_EBK2pPKhlChEPSYgKrXxrKUWomrQ8X9V8SP0xQ&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=cdp.x5.ru&sid=4acb4c423d47ae19#🇳🇱 Нидерланды?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
+vless://97e967da-1d2b-439e-836b-a9d5a90496dc@31.129.42.239:443?mode=gun&security=reality&encryption=none&pbk=KwPeoAnP208rOsWWHSjhPKdpVzvIHpfBUltBHaBCSDs&fp=firefox&spx=/&type=grpc&serviceName=grpc8c948083b439&sni=vk.com&sid=d9114354#⚪ 🇷🇺 Россия?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
+vless://97e967da-1d2b-439e-836b-a9d5a90496dc@31.129.42.239:443?mode=gun&security=reality&encryption=none&pbk=KwPeoAnP208rOsWWHSjhPKdpVzvIHpfBUltBHaBCSDs&fp=firefox&spx=/&type=grpc&serviceName=grpc8c948083b439&sni=vk.com&sid=d9114354#⚪ 🇷🇺 Россия?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
+vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@78.159.245.59:59985?security=reality&encryption=none&pbk=tl-y_EBK2pPKhlChEPSYgKrXxrKUWomrQ8X9V8SP0xQ&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=cdp.x5.ru&sid=4acb4c423d47ae19#🇳🇱 Нидерланды?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
+vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@46.8.208.59:50051?mode=gun&security=tls&encryption=none&type=grpc#🇷🇺 Россия?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
+vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@78.159.245.59:59522?mode=gun&security=tls&encryption=none&type=grpc#🇳🇱 Нидерланды?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
+
 vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@45.15.147.103:443?security=reality&encryption=none&pbk=g2LPfUD291KVMSN1lhAC1HSmKaAh3hQfnKozJ1enMV4&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=wikipedia.org&sid=65fc6512eee9a84a#🇷🇺 Россия
 vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@84.54.58.91:443?security=reality&encryption=none&pbk=g2LPfUD291KVMSN1lhAC1HSmKaAh3hQfnKozJ1enMV4&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=wikipedia.org&sid=65fc6512eee9a84a#🇷🇺 Россия
 vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@45.15.147.103:443?security=reality&encryption=none&pbk=g2LPfUD291KVMSN1lhAC1HSmKaAh3hQfnKozJ1enMV4&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=upload.wikimedia.org&sid=65fc6512eee9a84a#🇷🇺 Россия
