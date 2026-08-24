@@ -1,23 +1,3 @@
-HTTP/2 200 
-alt-svc: h3=":443"; ma=2592000
-announce: base64:4p2X77iPINCS0KHQlSDQm9Ce0JrQkNCm0JjQmCDQkiDQkdCV0JvQntCcINCh0J/QmNCh0JrQlSDinZfvuI8NCuKaoO+4jyDQldGB0LvQuCDRh9GC0L4t0YLQviDQvdC1INGA0LDQsdC+0YLQsNC10YIsINC+0LHQvdC+0LLQuNGC0LUg0L/QvtC00L/QuNGB0LrRgyDwn5SE
-cache-control: public, immutable
-content-disposition: attachment; filename=6570325671.json
-content-type: application/json
-date: Mon, 24 Aug 2026 17:31:04 GMT
-profile-title: base64:4pqh77iPTW9ua2V5IFZpbGxhZ2UgVlBOCg==
-profile-update-interval: 1
-profile-web-page-url: https://subscription.monkeyvillage.pro/kqGjXJHHZoyjVMMT
-server: Caddy
-server: uvicorn
-subscription-userinfo: upload=0; download=107248353; total=0; expire=1789234265.048644
-support-url: https://t.me/monkeyvillagesupportbot
-vary: User-Agent
-x-request-id: 1e4cda8f-e22c-4d96-bd21-4cf994e4b8fa
-content-length: 205602
-
-
-
 [
   {
     "api": {
