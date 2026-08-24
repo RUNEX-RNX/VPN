@@ -10,6 +10,7 @@
 #hide-settings: 1
 #announce: base64:VEdLIEBSTlh2cG4KU3VwcG9ydCBAUk5YdnBuc3VwcG9ydA==
 
+hysteria2://37f735364c8e90dac70ed495c952cf00@194.55.239.90:443?security=tls&fm=%7B%7D&sni=5post-gate.x5.ru&pinSHA256=b0f095eddc3e70a48da368ae99fe9f4634faf6f23b3cf7e55c7050323eabbfc9#🇸🇴 Швеция?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
 vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@46.8.209.245:443?security=reality&encryption=none&pbk=tl-y_EBK2pPKhlChEPSYgKrXxrKUWomrQ8X9V8SP0xQ&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=helper-test.x5.ru&sid=4acb4c423d47ae19#🇸🇴 Россия?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
 vless://7301b9f4-17fa-4f17-8a20-4cfdb2afd3cb@79.174.92.133:8443?security=reality&encryption=none&pbk=M_V1dM8_wcpwnmh2VZp-s3LCBjy38ZWCRpxLrBc58Do&headerType=none&fp=firefox&spx=/&type=tcp&sni=max.ru&sid=a48d397391861a3c#🇸🇴 Россия?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
 vless://5a8ea664-a86c-4e65-b168-3eca8d9cf701@46.243.142.239:8443?mode=gun&security=tls&encryption=none&type=grpc#🇸🇴 Нидерланды?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
