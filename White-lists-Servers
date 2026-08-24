@@ -1,655 +1,11 @@
-[
- {
-  "dns": {
-    "queryStrategy": "UseIPv4",
-    "servers": [
-      "1.1.1.1",
-      "8.8.8.8"
-    ]
-  },
-  "inbounds": [
-    {
-      "listen": "127.0.0.1",
-      "port": 10808,
-      "protocol": "socks",
-      "settings": {
-        "auth": "noauth",
-        "udp": true
-      },
-      "sniffing": {
-        "destOverride": [
-          "http",
-          "tls",
-          "quic"
-        ],
-        "enabled": true
-      },
-      "tag": "socks"
-    }
-  ],
-  "outbounds": [
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "nl.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
-          "serverName": "nl.monkeyvillage.pro",
-          "shortId": "2d8173053c44599d",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇳🇱 Нидерланды"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "de.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
-          "serverName": "de.monkeyvillage.pro",
-          "shortId": "dbfe71e8d87e5f8c",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇩🇪 Германия"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "se.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
-          "serverName": "se.monkeyvillage.pro",
-          "shortId": "07308a1408185397",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇸🇪 Швеция"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "es.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
-          "serverName": "es.monkeyvillage.pro",
-          "shortId": "8549b7a8c7f790c1",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇪🇸 Испания"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "fi.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
-          "serverName": "fi.monkeyvillage.pro",
-          "shortId": "5c12f0efaaa0d3a9",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇫🇮 Финляндия"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "pl.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
-          "serverName": "pl.monkeyvillage.pro",
-          "shortId": "4690a40f49d48f28",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇵🇱 Польша"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ru-bridge.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "H0bAU_r0uJoCA-yq9TXr54tZZ13jON20h8oGPkvWuS0",
-          "serverName": "ru-bridge.monkeyvillage.pro",
-          "shortId": "67fce9dfc5827eb6",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇷🇺 Россия"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "at.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
-          "serverName": "at.monkeyvillage.pro",
-          "shortId": "f76a9b37a4d4a44d",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇦🇹 Австрия"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "it.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
-          "serverName": "it.monkeyvillage.pro",
-          "shortId": "f94df82613785c95",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇮🇹 Италия"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "be.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
-          "serverName": "be.monkeyvillage.pro",
-          "shortId": "9d7c57098893460f",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇧🇪 Бельгия"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "pt.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
-          "serverName": "pt.monkeyvillage.pro",
-          "shortId": "2d8173053c44599d",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇵🇹 Португалия"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "uk.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
-          "serverName": "uk.monkeyvillage.pro",
-          "shortId": "59798c0706093b78",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇬🇧 Великобритания"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ie.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
-          "serverName": "ie.monkeyvillage.pro",
-          "shortId": "59798c0706093b78",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇮🇪 Ирландия"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "hk.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "tvz-0zx5-cxIYwwVmK-anU3RUstNR1WureViblH4x30",
-          "serverName": "hk.monkeyvillage.pro",
-          "shortId": "",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇭🇰 Гонконг"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sg.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "tvz-0zx5-cxIYwwVmK-anU3RUstNR1WureViblH4x30",
-          "serverName": "sg.monkeyvillage.pro",
-          "shortId": "",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇸🇬 Сингапур"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "br.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "tvz-0zx5-cxIYwwVmK-anU3RUstNR1WureViblH4x30",
-          "serverName": "br.monkeyvillage.pro",
-          "shortId": "",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇧🇷 Бразилия"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "us.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
-          "serverName": "us.monkeyvillage.pro",
-          "shortId": "9d7c57098893460f",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇺🇸 США"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ca.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "tvz-0zx5-cxIYwwVmK-anU3RUstNR1WureViblH4x30",
-          "serverName": "ca.monkeyvillage.pro",
-          "shortId": "",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇨🇦 Канада"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "au.monkeyvillage.pro",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "tvz-0zx5-cxIYwwVmK-anU3RUstNR1WureViblH4x30",
-          "serverName": "au.monkeyvillage.pro",
-          "shortId": "",
-          "spiderX": ""
-        },
-        "security": "reality"
-      },
-      "tag": "🇦🇺 Австралия"
-    },
-    {
-      "protocol": "freedom",
-      "settings": {
-        "domainStrategy": "UseIP"
-      },
-      "tag": "direct"
-    },
-    {
-      "protocol": "blackhole",
-      "settings": {
-        "response": {
-          "type": "http"
-        }
-      },
-      "tag": "block"
-    }
-  ],
-  "remarks": "🇳🇱 Нидерланды",
-  "routing": {
-    "balancers": [
-      {
-        "selector": [
-          "🇳🇱 Нидерланды",
-          "🇩🇪 Германия",
-          "🇸🇪 Швеция",
-          "🇪🇸 Испания",
-          "🇫🇮 Финляндия",
-          "🇵🇱 Польша",
-          "🇷🇺 Россия",
-          "🇦🇹 Австрия",
-          "🇮🇹 Италия",
-          "🇧🇪 Бельгия",
-          "🇵🇹 Португалия",
-          "🇬🇧 Великобритания",
-          "🇮🇪 Ирландия",
-          "🇭🇰 Гонконг",
-          "🇸🇬 Сингапур",
-          "🇧🇷 Бразилия",
-          "🇺🇸 США",
-          "🇨🇦 Канада",
-          "🇦🇺 Австралия"
-        ],
-        "tag": "balancer"
-      }
-    ],
-    "domainStrategy": "IPIfNonMatch",
-    "rules": [
-      {
-        "balancerTag": "balancer",
-        "inboundTag": [
-          "socks"
-        ],
-        "port": "0-65535"
-        }
-      ]
-    }
-  },
+--[
+--        }
+--      ]
+--    }
+--  },
+--]
+
+
 {
   "dns": {
     "servers": [
@@ -684,6 +40,571 @@
       "settings": {
         "vnext": [
           {
+            "address": "nl.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "nl.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
+          "shortId": "2d8173053c44599d",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇸🇴 Белые списки авто выбор ⚡"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "de.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
+          "shortId": "dbfe71e8d87e5f8c",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "se.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "se.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
+          "shortId": "07308a1408185397",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "es.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "es.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
+          "shortId": "8549b7a8c7f790c1",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "fi.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "fi.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
+          "shortId": "5c12f0efaaa0d3a9",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "pl.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "pl.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
+          "shortId": "4690a40f49d48f28",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ru-bridge.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ru-bridge.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "H0bAU_r0uJoCA-yq9TXr54tZZ13jON20h8oGPkvWuS0",
+          "shortId": "67fce9dfc5827eb6",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 7"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "at.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "at.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
+          "shortId": "f76a9b37a4d4a44d",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 8"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "it.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "it.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
+          "shortId": "f94df82613785c95",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 9"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "be.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "be.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
+          "shortId": "9d7c57098893460f",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 10"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "pt.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "pt.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
+          "shortId": "2d8173053c44599d",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 11"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "uk.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "uk.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
+          "shortId": "59798c0706093b78",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 12"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ie.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ie.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
+          "shortId": "59798c0706093b78",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 13"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hk.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "hk.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "tvz-0zx5-cxIYwwVmK-anU3RUstNR1WureViblH4x30",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 14"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "sg.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "sg.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "tvz-0zx5-cxIYwwVmK-anU3RUstNR1WureViblH4x30",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 15"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "br.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "br.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "tvz-0zx5-cxIYwwVmK-anU3RUstNR1WureViblH4x30",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 16"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "us.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "us.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
+          "shortId": "9d7c57098893460f",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 17"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ca.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ca.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "tvz-0zx5-cxIYwwVmK-anU3RUstNR1WureViblH4x30",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 18"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "au.monkeyvillage.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "au.monkeyvillage.pro",
+          "fingerprint": "firefox",
+          "publicKey": "tvz-0zx5-cxIYwwVmK-anU3RUstNR1WureViblH4x30",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды 19"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "cdn4-67.cdn-vkvideo.com",
             "port": 443,
             "users": [
@@ -707,7 +628,7 @@
           "spiderX": "/api/v1/video/init"
         }
       },
-      "tag": "🇷🇺 Россия"
+      "tag": "🇷🇺 Россия 1"
     },
     {
       "protocol": "vless",
@@ -741,7 +662,7 @@
           "mode": "auto"
         }
       },
-      "tag": "🇷🇺 Россия #2"
+      "tag": "🇷🇺 Россия 2"
     },
     {
       "protocol": "vless",
@@ -775,7 +696,7 @@
           "mode": "auto"
         }
       },
-      "tag": "🇷🇺 Россия #3"
+      "tag": "🇷🇺 Россия 3"
     },
     {
       "protocol": "vless",
@@ -805,7 +726,7 @@
           "spiderX": "/api/v1/video/init"
         }
       },
-      "tag": "🇫🇮 Финляндия"
+      "tag": "🇷🇺 Россия 4"
     },
     {
       "protocol": "vless",
@@ -839,7 +760,7 @@
           "mode": "auto"
         }
       },
-      "tag": "🇫🇮 Финляндия #2"
+      "tag": "🇷🇺 Россия 5"
     },
     {
       "protocol": "vless",
@@ -869,7 +790,7 @@
           "spiderX": "/api/v1/video/init"
         }
       },
-      "tag": "🇵🇱 Польша"
+      "tag": "🇷🇺 Россия 6"
     },
     {
       "protocol": "vless",
@@ -903,7 +824,7 @@
           "mode": "auto"
         }
       },
-      "tag": "🇵🇱 Польша #2"
+      "tag": "🇷🇺 Россия 7"
     },
     {
       "protocol": "vless",
@@ -933,7 +854,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇩🇪 ФРГ"
+      "tag": "🇷🇺 Россия 8"
     },
     {
       "protocol": "vless",
@@ -963,7 +884,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия #4"
+      "tag": "🇷🇺 Россия 9"
     },
     {
       "protocol": "vless",
@@ -993,7 +914,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия #5"
+      "tag": "🇷🇺 Россия 10"
     },
     {
       "protocol": "vless",
@@ -1023,7 +944,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия #6"
+      "tag": "🇷🇺 Россия 11"
     },
     {
       "protocol": "vless",
@@ -1053,7 +974,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия #7"
+      "tag": "🇷🇺 Россия 12"
     },
     {
       "protocol": "vless",
@@ -1083,7 +1004,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "🇫🇷 Франция"
+      "tag": "🇷🇺 Россия 13"
     },
     {
       "protocol": "vless",
@@ -1113,7 +1034,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "🇳🇱 Нидерланды"
+      "tag": "🇷🇺 Россия 14"
     },
     {
       "protocol": "vless",
@@ -1143,7 +1064,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "🇪🇪 Эстония"
+      "tag": "🇷🇺 Россия 15"
     },
     {
       "protocol": "vless",
@@ -1173,7 +1094,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "🇷🇺 Россия #8"
+      "tag": "🇷🇺 Россия 16"
     },
     {
       "protocol": "vless",
@@ -1203,7 +1124,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "🇺🇸 США"
+      "tag": "🇷🇺 Россия 17"
     },
     {
       "protocol": "vless",
@@ -1233,7 +1154,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "🇹🇷 Турция"
+      "tag": "🇷🇺 Россия 18"
     },
     {
       "protocol": "vless",
@@ -1263,7 +1184,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "🇨🇭 Швейцария"
+      "tag": "🇷🇺 Россия 19"
     },
     {
       "protocol": "vless",
@@ -1293,7 +1214,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "🇮🇹 Италия"
+      "tag": "🇷🇺 Россия 20"
     },
     {
       "protocol": "vless",
@@ -1323,7 +1244,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇩🇪 ФРГ #2"
+      "tag": "🇷🇺 Россия 21"
     },
     {
       "protocol": "vless",
@@ -1353,7 +1274,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия #9"
+      "tag": "🇷🇺 Россия 22"
     },
     {
       "protocol": "vless",
@@ -1383,7 +1304,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия #10"
+      "tag": "🇷🇺 Россия 23"
     },
     {
       "protocol": "vless",
@@ -1413,7 +1334,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия #11"
+      "tag": "🇷🇺 Россия 24"
     },
     {
       "protocol": "vless",
@@ -1443,7 +1364,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия #12"
+      "tag": "🇷🇺 Россия 25"
     },
     {
       "protocol": "hysteria2",
@@ -1464,7 +1385,7 @@
           "allowInsecure": false
         }
       },
-      "tag": "🇷🇺 Россия #13"
+      "tag": "🇷🇺 Россия 26"
     },
     {
       "protocol": "vless",
@@ -1494,7 +1415,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия #14"
+      "tag": "🇷🇺 Россия 27"
     },
     {
       "protocol": "vless",
@@ -1523,7 +1444,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "⚪ 🇷🇺 Россия"
+      "tag": "🇷🇺 Россия 28"
     },
     {
       "protocol": "vless",
@@ -1553,7 +1474,7 @@
           "multiMode": false
         }
       },
-      "tag": "🇳🇱 Нидерланды #2"
+      "tag": "🇷🇺 Россия 29"
     },
     {
       "protocol": "vless",
@@ -1586,7 +1507,7 @@
           "multiMode": false
         }
       },
-      "tag": "⚪ 🇷🇺 Россия #2"
+      "tag": "🇷🇺 Россия 30"
     },
     {
       "protocol": "vless",
@@ -1616,7 +1537,7 @@
           "multiMode": false
         }
       },
-      "tag": "🇷🇺 Россия #15"
+      "tag": "🇷🇺 Россия 31"
     },
     {
       "protocol": "vless",
@@ -1645,7 +1566,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "⚪ 🇷🇺 Россия #3"
+      "tag": "🇷🇺 Россия 32"
     },
     {
       "protocol": "vless",
@@ -1675,7 +1596,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды #3"
+      "tag": "🇷🇺 Россия 33"
     },
     {
       "protocol": "vless",
@@ -1708,7 +1629,7 @@
           "multiMode": false
         }
       },
-      "tag": "⚪ 🇷🇺 Россия #4"
+      "tag": "🇷🇺 Россия 34"
     },
     {
       "protocol": "vless",
@@ -1741,7 +1662,7 @@
           "multiMode": false
         }
       },
-      "tag": "⚪ 🇷🇺 Россия #5"
+      "tag": "🇷🇺 Россия 35"
     },
     {
       "protocol": "vless",
@@ -1771,7 +1692,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды #4"
+      "tag": "🇷🇺 Россия 36"
     },
     {
       "protocol": "vless",
@@ -1801,7 +1722,7 @@
           "multiMode": false
         }
       },
-      "tag": "🇷🇺 Россия #16"
+      "tag": "🇷🇺 Россия 37"
     },
     {
       "protocol": "vless",
@@ -1831,7 +1752,7 @@
           "multiMode": false
         }
       },
-      "tag": "🇳🇱 Нидерланды #5"
+      "tag": "🇷🇺 Россия 38"
     },
     {
       "protocol": "hysteria2",
@@ -1852,7 +1773,7 @@
           "allowInsecure": false
         }
       },
-      "tag": "🇸🇪 Швеция"
+      "tag": "🇷🇺 Россия 39"
     },
     {
       "protocol": "freedom",
@@ -1886,49 +1807,67 @@
       {
         "tag": "balancer",
         "selector": [
-          "🇷🇺 Россия",
-          "🇷🇺 Россия #2",
-          "🇷🇺 Россия #3",
-          "🇫🇮 Финляндия",
-          "🇫🇮 Финляндия #2",
-          "🇵🇱 Польша",
-          "🇵🇱 Польша #2",
-          "🇩🇪 ФРГ",
-          "🇷🇺 Россия #4",
-          "🇷🇺 Россия #5",
-          "🇷🇺 Россия #6",
-          "🇷🇺 Россия #7",
-          "🇫🇷 Франция",
-          "🇳🇱 Нидерланды",
-          "🇪🇪 Эстония",
-          "🇷🇺 Россия #8",
-          "🇺🇸 США",
-          "🇹🇷 Турция",
-          "🇨🇭 Швейцария",
-          "🇮🇹 Италия",
-          "🇩🇪 ФРГ #2",
-          "🇷🇺 Россия #9",
-          "🇷🇺 Россия #10",
-          "🇷🇺 Россия #11",
-          "🇷🇺 Россия #12",
-          "🇷🇺 Россия #13",
-          "🇷🇺 Россия #14",
-          "⚪ 🇷🇺 Россия",
-          "🇳🇱 Нидерланды #2",
-          "⚪ 🇷🇺 Россия #2",
-          "🇷🇺 Россия #15",
-          "⚪ 🇷🇺 Россия #3",
-          "🇳🇱 Нидерланды #3",
-          "⚪ 🇷🇺 Россия #4",
-          "⚪ 🇷🇺 Россия #5",
-          "🇳🇱 Нидерланды #4",
-          "🇷🇺 Россия #16",
-          "🇳🇱 Нидерланды #5",
-          "🇸🇪 Швеция"
+          "🇳🇱 Нидерланды 1",
+          "🇳🇱 Нидерланды 2",
+          "🇳🇱 Нидерланды 3",
+          "🇳🇱 Нидерланды 4",
+          "🇳🇱 Нидерланды 5",
+          "🇳🇱 Нидерланды 6",
+          "🇳🇱 Нидерланды 7",
+          "🇳🇱 Нидерланды 8",
+          "🇳🇱 Нидерланды 9",
+          "🇳🇱 Нидерланды 10",
+          "🇳🇱 Нидерланды 11",
+          "🇳🇱 Нидерланды 12",
+          "🇳🇱 Нидерланды 13",
+          "🇳🇱 Нидерланды 14",
+          "🇳🇱 Нидерланды 15",
+          "🇳🇱 Нидерланды 16",
+          "🇳🇱 Нидерланды 17",
+          "🇳🇱 Нидерланды 18",
+          "🇳🇱 Нидерланды 19",
+          "🇷🇺 Россия 1",
+          "🇷🇺 Россия 2",
+          "🇷🇺 Россия 3",
+          "🇷🇺 Россия 4",
+          "🇷🇺 Россия 5",
+          "🇷🇺 Россия 6",
+          "🇷🇺 Россия 7",
+          "🇷🇺 Россия 8",
+          "🇷🇺 Россия 9",
+          "🇷🇺 Россия 10",
+          "🇷🇺 Россия 11",
+          "🇷🇺 Россия 12",
+          "🇷🇺 Россия 13",
+          "🇷🇺 Россия 14",
+          "🇷🇺 Россия 15",
+          "🇷🇺 Россия 16",
+          "🇷🇺 Россия 17",
+          "🇷🇺 Россия 18",
+          "🇷🇺 Россия 19",
+          "🇷🇺 Россия 20",
+          "🇷🇺 Россия 21",
+          "🇷🇺 Россия 22",
+          "🇷🇺 Россия 23",
+          "🇷🇺 Россия 24",
+          "🇷🇺 Россия 25",
+          "🇷🇺 Россия 26",
+          "🇷🇺 Россия 27",
+          "🇷🇺 Россия 28",
+          "🇷🇺 Россия 29",
+          "🇷🇺 Россия 30",
+          "🇷🇺 Россия 31",
+          "🇷🇺 Россия 32",
+          "🇷🇺 Россия 33",
+          "🇷🇺 Россия 34",
+          "🇷🇺 Россия 35",
+          "🇷🇺 Россия 36",
+          "🇷🇺 Россия 37",
+          "🇷🇺 Россия 38",
+          "🇷🇺 Россия 39"
         ]
       }
     ]
   },
-  "remarks": "🇷🇺 Россия"
- }
-]
+  "remarks": "🇸🇴 Белые списки авто выбор ⚡"
+}
