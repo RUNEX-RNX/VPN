@@ -41,7 +41,9 @@
       "queryStrategy": "UseIPv4"
     },
     "remarks": "🇳🇱 Нидерланды ⚡️",
-    "routing": {
+    "meta": {
+    "serverDescription": "RNX / BYPASS / White List"
+     "routing": {
       "balancers": [
         {
           "fallbackTag": "LOOP-WL",
