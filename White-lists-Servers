@@ -1,4 +1,5 @@
-{
+[
+ {
   "dns": {
     "servers": [
       "1.1.1.1",
@@ -1434,4 +1435,1678 @@
     ]
   },
   "remarks": "🇸🇴 Белые списки авто выбор ⚡"
-}
+   }
+  ]
+ }
+},
+{
+  "dns": {
+    "servers": [
+      "1.1.1.1",
+      "8.8.8.8"
+    ],
+    "queryStrategy": "UseIPv4"
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      },
+      "tag": "socks"
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "max.ru",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇪🇺 Автовыбор"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "93.152.224.159",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇩🇪 Германия №2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "estdfs.cloudvk.cc",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "estdfs.cloudvk.cc",
+          "fingerprint": "firefox",
+          "publicKey": "Af5z1nqUp0NV9zY4hEtB66G1Df1vzs0TzX-ttU9BPA8",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇪🇪 Эстония"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "poland.cloudvk.cc",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "poland.cloudvk.cc",
+          "fingerprint": "firefox",
+          "publicKey": "Af5z1nqUp0NV9zY4hEtB66G1Df1vzs0TzX-ttU9BPA8",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇵🇱 Польша"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "nth.cloudvk.cc",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "nth.cloudvk.cc",
+          "fingerprint": "firefox",
+          "publicKey": "Af5z1nqUp0NV9zY4hEtB66G1Df1vzs0TzX-ttU9BPA8",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇳🇱 Нидерланды"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.126.67.165",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "#_f0r 🇩🇪 Германия №2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "87.249.36.40",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇩🇪 Германия №5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "31.76.119.143",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇩🇪 Германия №6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "31.76.119.81",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇩🇪 Германия №7"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "31.76.38.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇩🇪 Германия №8"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "87.249.36.111",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "yandex.ru",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇩🇪 Германия №9"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "201.34.131.90",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇩🇪 Германия №12"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "93.152.224.13",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇩🇪 Германия №13"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.92.43.108",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇩🇪 Германия №14"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.92.33.95",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇩🇪 Германия №15"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "89.34.90.25",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇩🇪 Германия №16"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "31.76.119.128",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇩🇪 Германия №17"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "87.58.206.49",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "chrome",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇩🇪 Германия №18"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.145.56.103",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇩🇪 Германия №19"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.85.252.146",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇩🇪 Германия №20"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "89.34.90.30",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇩🇪 Германия №21"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "94.26.83.7",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "chrome",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇩🇪Gemini"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "max.ru",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇪🇺 Обход все операторы [Автовыбор] LTE"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.22.235.203",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇪🇺 Обход все операторы"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.22.234.100",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇪🇺 Обход все операторы  №1"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.22.234.209",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇪🇺 Обход все операторы  №A"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.91.54.240",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇪🇺 Обход все операторы  №2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.185.83.119",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇪🇺 Обход все операторы  №9"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.185.83.17",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇪🇺 Обход все операторы  №11"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.109.85.87",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇪🇺 Обход все операторы  №16"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.109.85.86",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇪🇺 Обход все операторы  №17"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "81.163.23.158",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇪🇺 Обход все операторы  №6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "81.163.23.185",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇪🇺 Обход все операторы  №18"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "217.19.122.50",
+            "port": 7443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "#_v0g  🇪🇺 Обход все операторы  №13"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "81.163.23.131",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "#_8zx 🇪🇺 Обход все операторы  №13"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "31.129.42.155",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "#_9pv  🇪🇺 Обход все операторы  №13"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.91.54.150",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "#_t13   🇪🇺 Обход все операторы  №13"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.109.85.69",
+            "port": 9443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "#_xvc   🇪🇺 Обход все операторы  №13"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.149.147.231",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇫🇮 Финляндия"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.85.246.79",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇵🇱 Польша №3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.149.147.252",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇫🇮 Финляндия №1"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "31.77.140.240",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇫🇮 Финляндия №2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.85.241.208",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "chrome",
+          "publicKey": "6CHUluOn_Tdab7JOfUArmcfQPVEd4PbEQJMPvKWElhw",
+          "shortId": "",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇸🇪 Швеция"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.65.144.125",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
+          "shortId": "2a236a7fcbe0ce61",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": true
+        }
+      },
+      "tag": "🇨🇭Швейцария"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "178.176.128.128",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "edge-cl.cloudvk.cc",
+          "allowInsecure": false,
+          "fingerprint": "qq",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        },
+        "xhttpSettings": {
+          "path": "/content/sec.mp4/",
+          "host": "edge-cl.cloudvk.cc",
+          "mode": "packet-up",
+          "extra": {
+            "xmux": {
+              "cMaxReuseTimes": "0",
+              "maxConnections": "2",
+              "hKeepAlivePeriod": 30,
+              "hMaxRequestTimes": "100-200",
+              "hMaxReusableSecs": "900-1800"
+            },
+            "noSSEHeader": true,
+            "xPaddingKey": "_token",
+            "xPaddingBytes": "16-64",
+            "xPaddingHeader": "X-Signature",
+            "xPaddingMethod": "tokenish",
+            "uplinkHTTPMethod": "GET",
+            "xPaddingObfsMode": true,
+            "xPaddingPlacement": "query",
+            "scMaxEachPostBytes": "500000-1000000",
+            "uplinkDataPlacement": "body",
+            "scMinPostsIntervalMs": "50-150",
+            "scStreamUpServerSecs": "60-180"
+          }
+        }
+      },
+      "tag": "sfdsfd"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "test.cloudvk.cc",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "test.cloudvk.cc",
+          "fingerprint": "firefox",
+          "publicKey": "Af5z1nqUp0NV9zY4hEtB66G1Df1vzs0TzX-ttU9BPA8",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "#_5ll 🇳🇱 Нидерланды"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "81.94.148.65",
+            "port": 7443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "#_dz4    🇪🇺 Обход все операторы  №13"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "194.26.141.218",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "#_l5z 🇩🇪 Германия №2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "194.26.141.218",
+            "port": 443,
+            "users": [
+              {
+                "id": "54a33907-c356-40fa-b6f3-844b3e6a8b7c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "firefox",
+          "publicKey": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "#_hty   🇪🇺 Обход все операторы  №13"
+    },
+    {
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIP"
+      },
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      },
+      "tag": "block"
+    }
+  ],
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "inboundTag": [
+          "socks"
+        ],
+        "port": "0-65535",
+        "balancerTag": "balancer"
+      }
+    ],
+    "balancers": [
+      {
+        "tag": "balancer",
+        "selector": [
+          "🇪🇺 Автовыбор",
+          "🇩🇪 Германия №2",
+          "🇪🇪 Эстония",
+          "🇵🇱 Польша",
+          "🇳🇱 Нидерланды",
+          "#_f0r 🇩🇪 Германия №2",
+          "🇩🇪 Германия №5",
+          "🇩🇪 Германия №6",
+          "🇩🇪 Германия №7",
+          "🇩🇪 Германия №8",
+          "🇩🇪 Германия №9",
+          "🇩🇪 Германия №12",
+          "🇩🇪 Германия №13",
+          "🇩🇪 Германия №14",
+          "🇩🇪 Германия №15",
+          "🇩🇪 Германия №16",
+          "🇩🇪 Германия №17",
+          "🇩🇪 Германия №18",
+          "🇩🇪 Германия №19",
+          "🇩🇪 Германия №20",
+          "🇩🇪 Германия №21",
+          "🇩🇪Gemini",
+          "🇪🇺 Обход все операторы [Автовыбор] LTE",
+          "🇪🇺 Обход все операторы",
+          "🇪🇺 Обход все операторы  №1",
+          "🇪🇺 Обход все операторы  №A",
+          "🇪🇺 Обход все операторы  №2",
+          "🇪🇺 Обход все операторы  №9",
+          "🇪🇺 Обход все операторы  №11",
+          "🇪🇺 Обход все операторы  №16",
+          "🇪🇺 Обход все операторы  №17",
+          "🇪🇺 Обход все операторы  №6",
+          "🇪🇺 Обход все операторы  №18",
+          "#_v0g  🇪🇺 Обход все операторы  №13",
+          "#_8zx 🇪🇺 Обход все операторы  №13",
+          "#_9pv  🇪🇺 Обход все операторы  №13",
+          "#_t13   🇪🇺 Обход все операторы  №13",
+          "#_xvc   🇪🇺 Обход все операторы  №13",
+          "🇫🇮 Финляндия",
+          "🇵🇱 Польша №3",
+          "🇫🇮 Финляндия №1",
+          "🇫🇮 Финляндия №2",
+          "🇸🇪 Швеция",
+          "🇨🇭Швейцария",
+          "sfdsfd",
+          "#_5ll 🇳🇱 Нидерланды",
+          "#_dz4    🇪🇺 Обход все операторы  №13",
+          "#_l5z 🇩🇪 Германия №2",
+          "#_hty   🇪🇺 Обход все операторы  №13"
+        ]
+      }
+    ]
+  },
+  "remarks": "🇪🇺 Автовыбор"
+ }
+]
