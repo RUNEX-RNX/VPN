@@ -85,7 +85,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 2"
+      "tag": "🇩🇪 ФРГ"
     },
     {
       "protocol": "vless",
@@ -115,7 +115,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 3"
+      "tag": "🇸🇪 Швеция"
     },
     {
       "protocol": "vless",
@@ -145,7 +145,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 4"
+      "tag": "🇪🇸 Испания"
     },
     {
       "protocol": "vless",
@@ -175,7 +175,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 5"
+      "tag": "🇫🇮 Финляндия"
     },
     {
       "protocol": "vless",
@@ -235,7 +235,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 7"
+      "tag": "🇷🇺 Россия"
     },
     {
       "protocol": "vless",
@@ -265,7 +265,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 8"
+      "tag": "🇦🇹 Австрия"
     },
     {
       "protocol": "vless",
@@ -295,7 +295,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 9"
+      "tag": "🇮🇹 Италия"
     },
     {
       "protocol": "vless",
@@ -325,7 +325,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 10"
+      "tag": "🇩🇪 ФРГ #2"
     },
     {
       "protocol": "vless",
@@ -355,7 +355,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 11"
+      "tag": "🇵🇹 Португалия"
     },
     {
       "protocol": "vless",
@@ -385,7 +385,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 12"
+      "tag": "🇬🇧 Британия"
     },
     {
       "protocol": "vless",
@@ -415,7 +415,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 13"
+      "tag": "🇮🇪 Ирландия"
     },
     {
       "protocol": "vless",
@@ -444,7 +444,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 14"
+      "tag": "🇭🇰 Гонконг, Особый Административный Район Китая"
     },
     {
       "protocol": "vless",
@@ -473,7 +473,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 15"
+      "tag": "🇸🇬 Сингапур"
     },
     {
       "protocol": "vless",
@@ -502,7 +502,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 16"
+      "tag": "🇧🇷 Бразилия"
     },
     {
       "protocol": "vless",
@@ -532,7 +532,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 17"
+      "tag": "🇺🇸 США"
     },
     {
       "protocol": "vless",
@@ -561,7 +561,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 18"
+      "tag": "🇨🇦 Канада"
     },
     {
       "protocol": "vless",
@@ -590,105 +590,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇳🇱 Нидерланды 19"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cdn4-67.cdn-vkvideo.com",
-            "port": 443,
-            "users": [
-              {
-                "id": "1c8fb3f7-c4af-48a5-b886-080a4654b4a6",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "cdn4-67.cdn-vkvideo.com",
-          "fingerprint": "firefox",
-          "publicKey": "MpuwI3YH2g3YWHKLuQwwgD_qLo-UmUtZe8L1KXOKxhA",
-          "shortId": "b0d8f964b7ac8ac0",
-          "spiderX": "/api/v1/video/init"
-        }
-      },
-      "tag": "🇷🇺 Россия 1"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cdn4-67.cdn-vkvideo.com",
-            "port": 2053,
-            "users": [
-              {
-                "id": "1c8fb3f7-c4af-48a5-b886-080a4654b4a6",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "cdn4-67.cdn-vkvideo.com",
-          "fingerprint": "firefox",
-          "publicKey": "MpuwI3YH2g3YWHKLuQwwgD_qLo-UmUtZe8L1KXOKxhA",
-          "shortId": "966eadda72000d7c",
-          "spiderX": "/api/v1/video/chunk"
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/video/chunk",
-          "host": "",
-          "mode": "auto"
-        }
-      },
-      "tag": "🇷🇺 Россия 2"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cdn4-67.cdn-vkvideo.com",
-            "port": 2053,
-            "users": [
-              {
-                "id": "1c8fb3f7-c4af-48a5-b886-080a4654b4a6",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "cdn4-67.cdn-vkvideo.com",
-          "fingerprint": "firefox",
-          "publicKey": "MpuwI3YH2g3YWHKLuQwwgD_qLo-UmUtZe8L1KXOKxhA",
-          "shortId": "966eadda72000d7c",
-          "spiderX": "/api/v1/video/chunk"
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/video/chunk",
-          "host": "",
-          "mode": "auto"
-        }
-      },
-      "tag": "🇷🇺 Россия 3"
+      "tag": "🇦🇺 Австралия"
     },
     {
       "protocol": "vless",
@@ -718,7 +620,7 @@
           "spiderX": "/api/v1/video/init"
         }
       },
-      "tag": "🇷🇺 Россия 4"
+      "tag": "🇫🇮 Финляндия #2"
     },
     {
       "protocol": "vless",
@@ -752,7 +654,7 @@
           "mode": "auto"
         }
       },
-      "tag": "🇷🇺 Россия 5"
+      "tag": "🇫🇮 Финляндия #3"
     },
     {
       "protocol": "vless",
@@ -782,7 +684,7 @@
           "spiderX": "/api/v1/video/init"
         }
       },
-      "tag": "🇷🇺 Россия 6"
+      "tag": "🇵🇱 Польша"
     },
     {
       "protocol": "vless",
@@ -816,7 +718,7 @@
           "mode": "auto"
         }
       },
-      "tag": "🇷🇺 Россия 7"
+      "tag": "🇵🇱 Польша #2"
     },
     {
       "protocol": "vless",
@@ -846,7 +748,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия 8"
+      "tag": "🇩🇪 ФРГ #3"
     },
     {
       "protocol": "vless",
@@ -876,7 +778,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия 9"
+      "tag": "🇷🇺 Россия #5"
     },
     {
       "protocol": "vless",
@@ -906,7 +808,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия 10"
+      "tag": "🇷🇺 Россия #6"
     },
     {
       "protocol": "vless",
@@ -936,7 +838,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия 11"
+      "tag": "🇷🇺 Россия #7"
     },
     {
       "protocol": "vless",
@@ -966,7 +868,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия 12"
+      "tag": "🇷🇺 Россия #8"
     },
     {
       "protocol": "vless",
@@ -996,7 +898,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "🇷🇺 Россия 13"
+      "tag": "🇫🇷 Франция"
     },
     {
       "protocol": "vless",
@@ -1026,7 +928,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "🇷🇺 Россия 14"
+      "tag": "🇳🇱 Нидерланды #2"
     },
     {
       "protocol": "vless",
@@ -1056,7 +958,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "🇷🇺 Россия 15"
+      "tag": "🇪🇪 Эстония"
     },
     {
       "protocol": "vless",
@@ -1086,7 +988,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "🇷🇺 Россия 16"
+      "tag": "🇷🇺 Россия #9"
     },
     {
       "protocol": "vless",
@@ -1116,7 +1018,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "🇷🇺 Россия 17"
+      "tag": "🇺🇸 США #2"
     },
     {
       "protocol": "vless",
@@ -1146,7 +1048,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "🇷🇺 Россия 18"
+      "tag": "🇹🇷 Турция"
     },
     {
       "protocol": "vless",
@@ -1176,7 +1078,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "🇷🇺 Россия 19"
+      "tag": "🇨🇭 Швейцария"
     },
     {
       "protocol": "vless",
@@ -1206,178 +1108,7 @@
           "spiderX": "/"
         }
       },
-      "tag": "🇷🇺 Россия 20"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "de57.tranzit-net.ru",
-            "port": 443,
-            "users": [
-              {
-                "id": "bfc4bf9a-4614-4d46-a55d-5925f166f1fc",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "d.tranzit-net.ru",
-          "fingerprint": "firefox",
-          "publicKey": "IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k",
-          "shortId": "",
-          "spiderX": ""
-        }
-      },
-      "tag": "🇷🇺 Россия 21"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ru40.whost-solutions.ru",
-            "port": 443,
-            "users": [
-              {
-                "id": "bfc4bf9a-4614-4d46-a55d-5925f166f1fc",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru21.whost-solutions.ru",
-          "fingerprint": "firefox",
-          "publicKey": "IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k",
-          "shortId": "",
-          "spiderX": ""
-        }
-      },
-      "tag": "🇷🇺 Россия 22"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ru55.whost-solutions.ru",
-            "port": 443,
-            "users": [
-              {
-                "id": "bfc4bf9a-4614-4d46-a55d-5925f166f1fc",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru21.whost-solutions.ru",
-          "fingerprint": "firefox",
-          "publicKey": "IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k",
-          "shortId": "",
-          "spiderX": ""
-        }
-      },
-      "tag": "🇷🇺 Россия 23"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ru56.whost-solutions.ru",
-            "port": 443,
-            "users": [
-              {
-                "id": "bfc4bf9a-4614-4d46-a55d-5925f166f1fc",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru.whost-solutions.ru",
-          "fingerprint": "firefox",
-          "publicKey": "IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k",
-          "shortId": "",
-          "spiderX": ""
-        }
-      },
-      "tag": "🇷🇺 Россия 24"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ru59.whost-solutions.ru",
-            "port": 443,
-            "users": [
-              {
-                "id": "bfc4bf9a-4614-4d46-a55d-5925f166f1fc",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru21.whost-solutions.ru",
-          "fingerprint": "firefox",
-          "publicKey": "IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k",
-          "shortId": "",
-          "spiderX": ""
-        }
-      },
-      "tag": "🇷🇺 Россия 25"
-    },
-    {
-      "protocol": "hysteria2",
-      "settings": {
-        "servers": [
-          {
-            "address": "194.55.239.90",
-            "port": 443,
-            "password": "37f735364c8e90dac70ed495c952cf00"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "hysteria2",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "5post-gate.x5.ru",
-          "allowInsecure": false
-        }
-      },
-      "tag": "🇷🇺 Россия 26"
+      "tag": "🇮🇹 Италия #2"
     },
     {
       "protocol": "vless",
@@ -1407,36 +1138,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия 27"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "79.174.92.133",
-            "port": 8443,
-            "users": [
-              {
-                "id": "7301b9f4-17fa-4f17-8a20-4cfdb2afd3cb",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "firefox",
-          "publicKey": "M_V1dM8_wcpwnmh2VZp-s3LCBjy38ZWCRpxLrBc58Do",
-          "shortId": "a48d397391861a3c",
-          "spiderX": "/"
-        }
-      },
-      "tag": "🇷🇺 Россия 28"
+      "tag": "🇷🇺 Россия #15"
     },
     {
       "protocol": "vless",
@@ -1466,7 +1168,7 @@
           "multiMode": false
         }
       },
-      "tag": "🇷🇺 Россия 29"
+      "tag": "🇳🇱 Нидерланды #3"
     },
     {
       "protocol": "vless",
@@ -1499,7 +1201,7 @@
           "multiMode": false
         }
       },
-      "tag": "🇷🇺 Россия 30"
+      "tag": "⚪ 🇷🇺 Россия #2"
     },
     {
       "protocol": "vless",
@@ -1529,36 +1231,7 @@
           "multiMode": false
         }
       },
-      "tag": "🇷🇺 Россия 31"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "79.174.92.133",
-            "port": 8443,
-            "users": [
-              {
-                "id": "7301b9f4-17fa-4f17-8a20-4cfdb2afd3cb",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "firefox",
-          "publicKey": "M_V1dM8_wcpwnmh2VZp-s3LCBjy38ZWCRpxLrBc58Do",
-          "shortId": "a48d397391861a3c",
-          "spiderX": "/"
-        }
-      },
-      "tag": "🇷🇺 Россия 32"
+      "tag": "🇷🇺 Россия #16"
     },
     {
       "protocol": "vless",
@@ -1588,73 +1261,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия 33"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "31.129.42.239",
-            "port": 443,
-            "users": [
-              {
-                "id": "97e967da-1d2b-439e-836b-a9d5a90496dc",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "vk.com",
-          "fingerprint": "firefox",
-          "publicKey": "KwPeoAnP208rOsWWHSjhPKdpVzvIHpfBUltBHaBCSDs",
-          "shortId": "d9114354",
-          "spiderX": "/"
-        },
-        "grpcSettings": {
-          "serviceName": "grpc8c948083b439",
-          "multiMode": false
-        }
-      },
-      "tag": "🇷🇺 Россия 34"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "31.129.42.239",
-            "port": 443,
-            "users": [
-              {
-                "id": "97e967da-1d2b-439e-836b-a9d5a90496dc",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "vk.com",
-          "fingerprint": "firefox",
-          "publicKey": "KwPeoAnP208rOsWWHSjhPKdpVzvIHpfBUltBHaBCSDs",
-          "shortId": "d9114354",
-          "spiderX": "/"
-        },
-        "grpcSettings": {
-          "serviceName": "grpc8c948083b439",
-          "multiMode": false
-        }
-      },
-      "tag": "🇷🇺 Россия 35"
+      "tag": "🇳🇱 Нидерланды #4"
     },
     {
       "protocol": "vless",
@@ -1684,7 +1291,7 @@
           "spiderX": ""
         }
       },
-      "tag": "🇷🇺 Россия 36"
+      "tag": "🇳🇱 Нидерланды #5"
     },
     {
       "protocol": "vless",
@@ -1714,7 +1321,7 @@
           "multiMode": false
         }
       },
-      "tag": "🇷🇺 Россия 37"
+      "tag": "🇷🇺 Россия #17"
     },
     {
       "protocol": "vless",
@@ -1744,28 +1351,7 @@
           "multiMode": false
         }
       },
-      "tag": "🇷🇺 Россия 38"
-    },
-    {
-      "protocol": "hysteria2",
-      "settings": {
-        "servers": [
-          {
-            "address": "194.55.239.90",
-            "port": 443,
-            "password": "37f735364c8e90dac70ed495c952cf00"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "hysteria2",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "5post-gate.x5.ru",
-          "allowInsecure": false
-        }
-      },
-      "tag": "🇷🇺 Россия 39"
+      "tag": "🇳🇱 Нидерланды #6"
     },
     {
       "protocol": "freedom",
@@ -1799,64 +1385,50 @@
       {
         "tag": "balancer",
         "selector": [
-          "🇳🇱 Нидерланды 1",
-          "🇳🇱 Нидерланды 2",
-          "🇳🇱 Нидерланды 3",
-          "🇳🇱 Нидерланды 4",
-          "🇳🇱 Нидерланды 5",
+          "🇳🇱 Нидерланды",
+          "🇩🇪 ФРГ",
+          "🇸🇪 Швеция",
+          "🇪🇸 Испания",
+          "🇫🇮 Финляндия",
           "🇳🇱 Нидерланды 6",
-          "🇳🇱 Нидерланды 7",
-          "🇳🇱 Нидерланды 8",
-          "🇳🇱 Нидерланды 9",
-          "🇳🇱 Нидерланды 10",
-          "🇳🇱 Нидерланды 11",
-          "🇳🇱 Нидерланды 12",
-          "🇳🇱 Нидерланды 13",
-          "🇳🇱 Нидерланды 14",
-          "🇳🇱 Нидерланды 15",
-          "🇳🇱 Нидерланды 16",
-          "🇳🇱 Нидерланды 17",
-          "🇳🇱 Нидерланды 18",
-          "🇳🇱 Нидерланды 19",
-          "🇷🇺 Россия 1",
-          "🇷🇺 Россия 2",
-          "🇷🇺 Россия 3",
-          "🇷🇺 Россия 4",
-          "🇷🇺 Россия 5",
-          "🇷🇺 Россия 6",
-          "🇷🇺 Россия 7",
-          "🇷🇺 Россия 8",
-          "🇷🇺 Россия 9",
-          "🇷🇺 Россия 10",
-          "🇷🇺 Россия 11",
-          "🇷🇺 Россия 12",
-          "🇷🇺 Россия 13",
-          "🇷🇺 Россия 14",
-          "🇷🇺 Россия 15",
-          "🇷🇺 Россия 16",
-          "🇷🇺 Россия 17",
-          "🇷🇺 Россия 18",
-          "🇷🇺 Россия 19",
-          "🇷🇺 Россия 20",
-          "🇷🇺 Россия 21",
-          "🇷🇺 Россия 22",
-          "🇷🇺 Россия 23",
-          "🇷🇺 Россия 24",
-          "🇷🇺 Россия 25",
-          "🇷🇺 Россия 26",
-          "🇷🇺 Россия 27",
-          "🇷🇺 Россия 28",
-          "🇷🇺 Россия 29",
-          "🇷🇺 Россия 30",
-          "🇷🇺 Россия 31",
-          "🇷🇺 Россия 32",
-          "🇷🇺 Россия 33",
-          "🇷🇺 Россия 34",
-          "🇷🇺 Россия 35",
-          "🇷🇺 Россия 36",
-          "🇷🇺 Россия 37",
-          "🇷🇺 Россия 38",
-          "🇷🇺 Россия 39"
+          "🇷🇺 Россия",
+          "🇦🇹 Австрия",
+          "🇮🇹 Италия",
+          "🇩🇪 ФРГ #2",
+          "🇵🇹 Португалия",
+          "🇬🇧 Британия",
+          "🇮🇪 Ирландия",
+          "🇭🇰 Гонконг, Особый Административный Район Китая",
+          "🇸🇬 Сингапур",
+          "🇧🇷 Бразилия",
+          "🇺🇸 США",
+          "🇨🇦 Канада",
+          "🇦🇺 Австралия",
+          "🇫🇮 Финляндия #2",
+          "🇫🇮 Финляндия #3",
+          "🇵🇱 Польша",
+          "🇵🇱 Польша #2",
+          "🇩🇪 ФРГ #3",
+          "🇷🇺 Россия #5",
+          "🇷🇺 Россия #6",
+          "🇷🇺 Россия #7",
+          "🇷🇺 Россия #8",
+          "🇫🇷 Франция",
+          "🇳🇱 Нидерланды #2",
+          "🇪🇪 Эстония",
+          "🇷🇺 Россия #9",
+          "🇺🇸 США #2",
+          "🇹🇷 Турция",
+          "🇨🇭 Швейцария",
+          "🇮🇹 Италия #2",
+          "🇷🇺 Россия #15",
+          "🇳🇱 Нидерланды #3",
+          "⚪ 🇷🇺 Россия #2",
+          "🇷🇺 Россия #16",
+          "🇳🇱 Нидерланды #4",
+          "🇳🇱 Нидерланды #5",
+          "🇷🇺 Россия #17",
+          "🇳🇱 Нидерланды #6"
         ]
       }
     ]
