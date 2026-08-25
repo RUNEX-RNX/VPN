@@ -9,10 +9,15 @@
 #subscription-auto-update-open-enable: 1
 #subscription-ping-onopen-enabled: 1
 #profile-update-interval: 1
+#subscriptions-collapse: 0
 #subscription-pin: true
 #app-auto-start: 1
 #hide-settings: 1
 #announce: base64:VEdLIEBSTlh2cG4KU3VwcG9ydCBAUk5YdnBuc3VwcG9ydAoK8J+HuPCfh7QgLSDQvtCx0YXQvtC2INCx0LXQu9GL0YUg0YHQv9C40YHQutC+0LIgCuKaoSAtINGB0LDQvNGL0Lkg0LHRi9GB0YLRgNGL0Lkg0YHQtdGA0LLQtdGAIAo=
+#color-profile: {"backgroundGradientRotationAngle":37.1,"serverRowBackgroundColor":"#21003D67","subsHeaderColor":"#42296DFF","profileWebPageIconColor":"#A2B8FFFF","selectedServerRowColor":"#3E2F62B5","disclosureSubHeaderTextColor":"#C1C2E2FF","buttonTextColor":"#FFFFFFFF","buttonTimerColor":"#FFFFFFFF","subscriptionInfoBackgroundColor":"#21003CFF","backgroundColors":["#3D2A7DFF","#6557BAFF","#9377FF7F"],"disclosureHeaderTextColor":"#FFFFFFFF","backgroundGradientColorIntensity":1,"additionalOptionsButtonColor":"#FFFFFFFF","buttonImageType":"light","serverRowSubTitleTextColor":"#C1C2E2FF","supportIconColor":"#FFFFFFFF","topBarButtonsColor":"#FFFFFFFF","subscriptionTrafficBackgroundColor":"#533EA7FF","subHeaderButtonColor":"#FFFFFFFF","buttonColor":"#9377FFFF","powerIconColor":"#3D2A7DFF","subscriptionInfoTextColor":"#FFFFFFFF","serverRowTitleTextColor":"#FFFFFFFF","backgroundImageType":"system","elipseColors":["#00B460FF","#CF72FFE0","#FFDD00FF"],"serverRowChevronColor":"#FFFFFFFF"}
+
+
+
 
 vless://1c8fb3f7-c4af-48a5-b886-080a4654b4a6@cdn4-67.cdn-vkvideo.com:443?security=reality&encryption=none&pbk=MpuwI3YH2g3YWHKLuQwwgD_qLo-UmUtZe8L1KXOKxhA&headerType=none&fp=firefox&spx=/api/v1/video/init&type=tcp&flow=xtls-rprx-vision&sni=cdn4-67.cdn-vkvideo.com&sid=b0d8f964b7ac8ac0#🇸🇴 Россия?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
 vless://1c8fb3f7-c4af-48a5-b886-080a4654b4a6@cdn4-67.cdn-vkvideo.com:2053?mode=auto&path=/api/v1/video/chunk&security=reality&encryption=none&pbk=MpuwI3YH2g3YWHKLuQwwgD_qLo-UmUtZe8L1KXOKxhA&fp=firefox&spx=/api/v1/video/chunk&type=xhttp&sni=cdn4-67.cdn-vkvideo.com&sid=966eadda72000d7c#🇸🇴 Россия?serverDescription=0KHQtdGA0LLQtdGAINC00LvRjyDQvtCx0YXQvtC00LAg0LHQtdC70YvRhSDRgdC/0LjRgdC60L7Qsg==
