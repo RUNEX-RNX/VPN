@@ -6,8 +6,11 @@
 #subscription-userinfo: upload=0; download=73667279060992; total=75435293758455808; expire=151404336000
 #profile-web-page-url: https://t.me/RNXvpn
 #support-url: https://t.me/RUNEXscript
+#subscription-auto-update-open-enable: 1
+#subscription-ping-onopen-enabled: 1
 #profile-update-interval: 1
 #subscription-pin: true
+#app-auto-start: 1
 #hide-settings: 1
 #announce: base64:VEdLIEBSTlh2cG4KU3VwcG9ydCBAUk5YdnBuc3VwcG9ydAoK8J+HuPCfh7QgLSDQvtCx0YXQvtC2INCx0LXQu9GL0YUg0YHQv9C40YHQutC+0LIgCuKaoSAtINGB0LDQvNGL0Lkg0LHRi9GB0YLRgNGL0Lkg0YHQtdGA0LLQtdGAIAo=
 
