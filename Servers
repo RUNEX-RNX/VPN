@@ -8,6 +8,7 @@
 #support-url: https://t.me/RUNEXscript
 #subscription-auto-update-open-enable: 1
 #subscription-ping-onopen-enabled: 1
+#subscriptions-sort-type: ping
 #profile-update-interval: 1
 #subscriptions-collapse: 0
 #subscription-pin: true
