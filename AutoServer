@@ -6678,6 +6678,428 @@
       "tag": "⚪ 🇷🇺 Россия 13"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "se2.pawnet.ink",
+            "port": 1443,
+            "users": [
+              {
+                "id": "eb010bf0-a1c6-475c-a13c-d2500222292c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      },
+      "tag": "🇸🇪 Швеция #2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "se1.pawnet.ink",
+            "port": 1443,
+            "users": [
+              {
+                "id": "eb010bf0-a1c6-475c-a13c-d2500222292c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      },
+      "tag": "🇸🇪 Швеция 2 #2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "elastik-ru-br.pawnet.ink",
+            "port": 2443,
+            "users": [
+              {
+                "id": "eb010bf0-a1c6-475c-a13c-d2500222292c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      },
+      "tag": "🇷🇺 Россия #3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "nl.pawnet.ink",
+            "port": 1443,
+            "users": [
+              {
+                "id": "eb010bf0-a1c6-475c-a13c-d2500222292c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      },
+      "tag": "🇳🇱 Нидерланды #2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "elastik-ru-br.pawnet.ink",
+            "port": 7443,
+            "users": [
+              {
+                "id": "eb010bf0-a1c6-475c-a13c-d2500222292c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      },
+      "tag": "🇷🇺 Россия 2 #3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de.pawnet.ink",
+            "port": 443,
+            "users": [
+              {
+                "id": "eb010bf0-a1c6-475c-a13c-d2500222292c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      },
+      "tag": "🇩🇪 Германия #2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "fi.pawnet.ink",
+            "port": 1443,
+            "users": [
+              {
+                "id": "eb010bf0-a1c6-475c-a13c-d2500222292c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      },
+      "tag": "🇫🇮 Финляндия #2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "lv.pawnet.ink",
+            "port": 443,
+            "users": [
+              {
+                "id": "eb010bf0-a1c6-475c-a13c-d2500222292c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      },
+      "tag": "🇱🇻 Латвия"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dk.pawnet.ink",
+            "port": 1443,
+            "users": [
+              {
+                "id": "eb010bf0-a1c6-475c-a13c-d2500222292c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      },
+      "tag": "🇩🇰 Дания"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ru.pawnet.ink",
+            "port": 443,
+            "users": [
+              {
+                "id": "eb010bf0-a1c6-475c-a13c-d2500222292c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      },
+      "tag": "🇷🇺 Россия 3 #3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "usa.pawnet.ink",
+            "port": 1443,
+            "users": [
+              {
+                "id": "eb010bf0-a1c6-475c-a13c-d2500222292c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      },
+      "tag": "🇺🇸 США #2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "jster-da.pawnet.ink",
+            "port": 2443,
+            "users": [
+              {
+                "id": "eb010bf0-a1c6-475c-a13c-d2500222292c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "travel.yandex.ru",
+          "fingerprint": "firefox",
+          "publicKey": "tBSmBLkenlEFWM07Nu1o9qOpw_vsBv8v95pAdQ3gkkE",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇷🇺 Россия 4 #3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "jster-da.pawnet.ink",
+            "port": 5443,
+            "users": [
+              {
+                "id": "eb010bf0-a1c6-475c-a13c-d2500222292c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "travel.yandex.ru",
+          "fingerprint": "firefox",
+          "publicKey": "6oT3bs8gyHdAQj8AOC0RPX7IC60demM_sQM_zTsTU2g",
+          "shortId": "",
+          "spiderX": ""
+        }
+      },
+      "tag": "🇷🇺 Россия 5 #3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "jster-da.pawnet.ink",
+            "port": 7443,
+            "users": [
+              {
+                "id": "eb010bf0-a1c6-475c-a13c-d2500222292c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "travel.yandex.ru",
+          "fingerprint": "firefox",
+          "publicKey": "Q2WIjn5aDB_gVDzm_tYFekOFI1Cf1pKhXOx_34PS4So",
+          "shortId": "",
+          "spiderX": ""
+        },
+        "xhttpSettings": {
+          "path": "/",
+          "host": "",
+          "mode": ""
+        }
+      },
+      "tag": "🇷🇺 Россия 6 #3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cdn100dkdkdk.pawnet.ink",
+            "port": 443,
+            "users": [
+              {
+                "id": "eb010bf0-a1c6-475c-a13c-d2500222292c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        },
+        "xhttpSettings": {
+          "path": "/",
+          "host": "",
+          "mode": ""
+        }
+      },
+      "tag": "🇷🇺 Россия 7 #3"
+    },
+    {
       "protocol": "freedom",
       "settings": {
         "domainStrategy": "UseIP"
@@ -6709,7 +7131,7 @@
       {
         "tag": "balancer",
         "selector": [
-          "🇲🇩 Молдова",
+          "🇸🇴 белые списки + Wi-Fi",
           "🇷🇺 Россия",
           "🇲🇩 Молдова 2",
           "🇷🇺 Россия 2",
@@ -6925,7 +7347,22 @@
           "🇩🇪 ФРГ 18",
           "🇳🇱 Нидерланды 16",
           "🇪🇪 Эстония 2",
-          "⚪ 🇷🇺 Россия 13"
+          "⚪ 🇷🇺 Россия 13",
+          "🇸🇪 Швеция #2",
+          "🇸🇪 Швеция 2 #2",
+          "🇷🇺 Россия #3",
+          "🇳🇱 Нидерланды #2",
+          "🇷🇺 Россия 2 #3",
+          "🇩🇪 Германия #2",
+          "🇫🇮 Финляндия #2",
+          "🇱🇻 Латвия",
+          "🇩🇰 Дания",
+          "🇷🇺 Россия 3 #3",
+          "🇺🇸 США #2",
+          "🇷🇺 Россия 4 #3",
+          "🇷🇺 Россия 5 #3",
+          "🇷🇺 Россия 6 #3",
+          "🇷🇺 Россия 7 #3"
         ]
       }
     ]
