@@ -14,7 +14,7 @@
 #subscription-pin: true
 #app-auto-start: 1
 #hide-settings: 1
-#announce: base64:VEdLIEBSTlh2cG4KU3VwcG9ydCBAUk5YdnBuc3VwcG9ydAoK8J+HuPCfh7QgLSDQvtCx0YXQvtC2INCx0LXQu9GL0YUg0YHQv9C40YHQutC+0LIgCuKaoSAtINGB0LDQvNGL0Lkg0LHRi9GB0YLRgNGL0Lkg0YHQtdGA0LLQtdGAIAo=
+#announce: base64:VEdLIEBSTlh2cG4KU3VwcG9ydCBAUk5YdnBuc3VwcG9ydAoK8J+HuPCfh7QgLSDQvtCx0YXQvtC0INCx0LXQu9GL0YUg0YHQv9C40YHQutC+0LIgCuKaoSAtINGB0LDQvNGL0Lkg0LHRi9GB0YLRgNGL0Lkg0YHQtdGA0LLQtdGAIAo=
 #color-profile: {"backgroundGradientRotationAngle":37.1,"serverRowBackgroundColor":"#21003D67","subsHeaderColor":"#42296DFF","profileWebPageIconColor":"#A2B8FFFF","selectedServerRowColor":"#3E2F62B5","disclosureSubHeaderTextColor":"#C1C2E2FF","buttonTextColor":"#FFFFFFFF","buttonTimerColor":"#FFFFFFFF","subscriptionInfoBackgroundColor":"#21003CFF","backgroundColors":["#3D2A7DFF","#6557BAFF","#9377FF7F"],"disclosureHeaderTextColor":"#FFFFFFFF","backgroundGradientColorIntensity":1,"additionalOptionsButtonColor":"#FFFFFFFF","buttonImageType":"light","serverRowSubTitleTextColor":"#C1C2E2FF","supportIconColor":"#FFFFFFFF","topBarButtonsColor":"#FFFFFFFF","subscriptionTrafficBackgroundColor":"#533EA7FF","subHeaderButtonColor":"#FFFFFFFF","buttonColor":"#9377FFFF","powerIconColor":"#3D2A7DFF","subscriptionInfoTextColor":"#FFFFFFFF","serverRowTitleTextColor":"#FFFFFFFF","backgroundImageType":"system","elipseColors":["#00B460FF","#CF72FFE0","#FFDD00FF"],"serverRowChevronColor":"#FFFFFFFF"}
 
 vless://ce71afbc-88bc-42ae-963a-db1c18d069f9@nl.coffeconsulting.uk:443?encryption=none&security=reality&sni=nl.coffeconsulting.uk&fp=firefox&pbk=Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo&sid=ebb12f7960bfad25&flow=xtls-rprx-vision#🇩🇪 ФРГ
