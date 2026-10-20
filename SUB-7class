@@ -11,7 +11,7 @@
 #subscription-pin: true
 #app-auto-start: 1
 #hide-settings: 1
-#announce: base64:VEdLIEBSTlh2cG4KU3VwcG9ydCBAUk5YdnBuc3VwcG9ydAoK8J+HuPCfh7QgLSDQvtCx0YXQvtC0INCx0LXQu9GL0YUg0YHQv9C40YHQutC+0LIgCuKaoSAtINGB0LDQvNGL0Lkg0LHRi9GB0YLRgNGL0Lkg0YHQtdGA0LLQtdGAIAo=
+#announce: base64:0KfRgtC+LdGC0L4g0L3QtSDRgtCw0Lo/CtCf0LjRiNC4IEBSTlh2cG5zdXBwb3J0IAo=
 #color-profile: {"backgroundGradientRotationAngle":39.21265661716461,"serverRowChevronColor":"#F3FFFDFF","buttonImageType":"light","buttonTimerColor":"#1F3D26FF","subscriptionTrafficBackgroundColor":"#00381FFF","subscriptionInfoBackgroundColor":"#007A3DFF","serverRowTitleTextColor":"#D0FFE0FF","serverRowBackgroundColor":"#024D2AFF","powerIconColor":"#055A2ACA","supportIconColor":"#F3FFF9FF","profileWebPageIconColor":"#F5FFF9FF","selectedServerRowColor":"#007B3DFF","disclosureHeaderTextColor":"#D0FFE0FF","subsHeaderColor":"#00823DFF","elipseColors":["#4DFF00CC","#B6FF00FF","#00FF88FF"],"subscriptionInfoTextColor":"#E5FFF0FF","buttonColor":"#8FFFB0FF","serverRowSubTitleTextColor":"#ADD3BCFF","topBarButtonsColor":"#FFFFFFD8","settingsControlsTintColor":"#00C36AFF","backgroundGradientColorIntensity":1,"disclosureSubHeaderTextColor":"#A4FFC899","additionalOptionsButtonColor":"#FBFFFF99","backgroundImageType":"light","backgroundColors":["#00381FFF","#00381FFF","#00522AFF","#00A64DFF","#00DD77FF"],"subHeaderButtonColor":"#BAD7C4FF","buttonTextColor":"#00220FFF"}
 
 vless://c19bd198-a393-492e-86fd-b389a03b4180@217.69.167.125:43000?encryption=none&security=reality&fp=chrome&pbk=NXN75t-gk0tpVh74Thc7nPBXM4fytgMOZafDzSe8xAk&sid=353fdd95&spx=%2F&flow=xtls-rprx-vision#%F0%9F%87%A8%F0%9F%87%AD%E2%9A%A1%20%D0%90%D0%B2%D1%82%D0%BE%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%201
